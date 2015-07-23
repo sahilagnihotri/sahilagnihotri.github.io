@@ -20,8 +20,8 @@ Factfile:
 
       Real name : Sahil Agnihotri
       Civil status: Single
+      Hobbies : Biking, hiking, Squash, skiing and climbing
       Favorite games: Doom, Counter Strike 1.6, Mario kart
-
       And, to contact me:
       email : sahilagnihotri@ymail.com
       twitter : @sahilagnihotri
