@@ -1,0 +1,22 @@
+baseURL = "https://sahilagnihotri.github.io/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "hugo-xmin"
+
+[params]
+  author = "Sahil Agnihotri"
+  description = "A minimal Hugo site using the XMin theme."
+  github = "https://github.com/sahilagnihotri"
+  linkedin = "https://linkedin.com/in/sahilagnihotri"
+  twitter = "https://twitter.com/sahilagnihotri"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 2
