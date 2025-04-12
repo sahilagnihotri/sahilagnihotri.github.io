@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sahil Agnihotri on sahilagnihotri github pages site</title>
-    <link>https://sahilagnihotri.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Sahil Agnihotri on sahilagnihotri github pages site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 12 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://sahilagnihotri.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>testblog post</title>
-      <link>https://sahilagnihotri.github.io/post/2025/04/12/a-quick-note/</link>
+      <link>http://localhost:1313/post/2025/04/12/a-quick-note/</link>
       <pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://sahilagnihotri.github.io/post/2025/04/12/a-quick-note/</guid>
+      <guid>http://localhost:1313/post/2025/04/12/a-quick-note/</guid>
       <description>&lt;p&gt;Simple blog test Entry&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Test Markdown Post</title>
-      <link>https://sahilagnihotri.github.io/note/2016/02/14/a-test-markdown-post/</link>
+      <link>http://localhost:1313/note/2016/02/14/a-test-markdown-post/</link>
       <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
-      <guid>https://sahilagnihotri.github.io/note/2016/02/14/a-test-markdown-post/</guid>
+      <guid>http://localhost:1313/note/2016/02/14/a-test-markdown-post/</guid>
       <description>&lt;p&gt;This sample post is mainly for&#xA;&lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;&lt;strong&gt;blogdown&lt;/strong&gt;&lt;/a&gt; users. If you do not use&#xA;&lt;strong&gt;blogdown&lt;/strong&gt;, you can skip the first section.&lt;/p&gt;&#xA;&lt;h1 id=&#34;1-markdown-or-r-markdown&#34;&gt;1. Markdown or R Markdown&lt;/h1&gt;&#xA;&lt;p&gt;This is a post written in plain Markdown (&lt;code&gt;*.md&lt;/code&gt;) instead of R Markdown&#xA;(&lt;code&gt;*.Rmd&lt;/code&gt;). The major differences are:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;You cannot run any R code in a plain Markdown document, whereas in an R&#xA;Markdown document, you can embed R code chunks (&lt;code&gt;```{r}&lt;/code&gt;);&lt;/li&gt;&#xA;&lt;li&gt;A plain Markdown post is rendered through&#xA;&lt;a href=&#34;https://gohugo.io/overview/configuration/&#34;&gt;Goldmark&lt;/a&gt; by default, and an R&#xA;Markdown document is compiled by&#xA;&lt;a href=&#34;http://rmarkdown.rstudio.com&#34;&gt;&lt;strong&gt;rmarkdown&lt;/strong&gt;&lt;/a&gt; and&#xA;&lt;a href=&#34;http://pandoc.org&#34;&gt;Pandoc&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;There are differences in syntax between Goldmark&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s&#xA;Markdown. For example, Goldmark does not support LaTeX math and Pandoc does. I&#xA;have added the KaTeX support to this theme (i.e.,&#xA;&lt;a href=&#34;https://github.com/yihui/hugo-xmin&#34;&gt;hugo-xmin&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://sahilagnihotri.github.io/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sahilagnihotri.github.io/about/</guid>
-      <description>&lt;h2 id=&#34;short-intro&#34;&gt;Short Intro&lt;/h2&gt;&#xA;&lt;p&gt;I am an experienced Technical Project/Product Architect specializing in successfully delivering cross-platform software solutions (AR, mobile, desktop, web, and embedded systems) across various industries, including CAD, CFD, Geospatial, Surveying, Mining, and AEC BIM. I hold PRINCE2 Agile® and RedHat Enterprise Linux certifications and received the Perforce Versionary award in 2016. Always seeking new challenges and opportunities to learn. Let’s connect!&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;experience&#34;&gt;Experience&lt;/h3&gt;&#xA;&lt;h4&gt;&lt;strong&gt;&lt;img src=&#34;https://sahilagnihotri.github.io/icons/hexagon.png&#34; alt=&#34;Hexagon AB&#34; width=&#34;20&#34; height=&#34;20&#34;&gt; &lt;a href=&#34;https://hexagon.com/&#34;&gt;Hexagon AB&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;&#xA;&lt;p&gt;&lt;strong&gt;Expert Software Engineer&lt;/strong&gt;&#xA;&lt;em&gt;Mar 2013 – Present (12 years 2 months)&lt;/em&gt;&#xA;Oslo, Norway&lt;/p&gt;</description>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h2 id=&#34;short-intro&#34;&gt;Short Intro&lt;/h2&gt;&#xA;&lt;p&gt;I am an experienced Technical Project/Product Architect specializing in successfully delivering cross-platform software solutions (AR, mobile, desktop, web, and embedded systems) across various industries, including CAD, CFD, Geospatial, Surveying, Mining, and AEC BIM. I hold PRINCE2 Agile® and RedHat Enterprise Linux certifications and received the Perforce Versionary award in 2016. Always seeking new challenges and opportunities to learn. Let’s connect!&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;experience&#34;&gt;Experience&lt;/h3&gt;&#xA;&lt;h4&gt;&lt;strong&gt;&lt;img src=&#34;http://localhost:1313/icons/hexagon.png&#34; alt=&#34;Hexagon AB&#34; width=&#34;20&#34; height=&#34;20&#34;&gt; &lt;a href=&#34;https://hexagon.com/&#34;&gt;Hexagon AB&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;&#xA;&lt;p&gt;&lt;strong&gt;Expert Software Engineer&lt;/strong&gt;&#xA;&lt;em&gt;Mar 2013 – Present (12 years 2 months)&lt;/em&gt;&#xA;Oslo, Norway&lt;/p&gt;</description>
     </item>
     <item>
       <title>Assignment1</title>
-      <link>https://sahilagnihotri.github.io/assignments/assignment1/</link>
+      <link>http://localhost:1313/assignments/assignment1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sahilagnihotri.github.io/assignments/assignment1/</guid>
+      <guid>http://localhost:1313/assignments/assignment1/</guid>
       <description>&lt;h1 id=&#34;assignment1&#34;&gt;Assignment1&lt;/h1&gt;&#xA;&lt;h2 id=&#34;code-sample&#34;&gt;Code sample:&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Sample code heres&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;hugoyaml-the-config-file&#34;&gt;&lt;code&gt;hugo.yaml&lt;/code&gt; (the config file)&lt;/h2&gt;&#xA;&lt;p&gt;For this example site, I defined permalinks for two sections, &lt;code&gt;post&lt;/code&gt; and &lt;code&gt;note&lt;/code&gt;, so that the links to pages under these directories will contain the date info, e.g., &lt;code&gt;https://xmin.yihui.org/post/2016/02/14/a-plain-markdown-post/&lt;/code&gt;. This is optional, and it is up to your personal taste of URLs.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;permalinks&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;note&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/note/:year/:month/:day/:slug/&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;post&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/post/:year/:month/:day/:slug/&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;</description>
     </item>
     <item>
       <title>Assignment2</title>
-      <link>https://sahilagnihotri.github.io/assignments/assignment2/</link>
+      <link>http://localhost:1313/assignments/assignment2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sahilagnihotri.github.io/assignments/assignment2/</guid>
+      <guid>http://localhost:1313/assignments/assignment2/</guid>
       <description>&lt;h1 id=&#34;assignment2&#34;&gt;Assignment2&lt;/h1&gt;</description>
     </item>
   </channel>
