@@ -6,15 +6,34 @@
     <title>{{ .Title }} | {{ .Site.Title }}</title>
     <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
     <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     {{ partial "head_custom.html" . }}
   </head>
 
   <body>
-    <nav>
-    <ul class="menu">
-      {{ range .Site.Menus.main }}
-      <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-      {{ end }}
-    </ul>
-    <hr/>
+    <nav class="navbar">
+      <ul class="menu">
+        {{ range .Site.Menus.main }}
+        <li class="{{ if or (eq (lower .URL) (lower $.RelPermalink)) (eq (lower .URL) (lower $.Permalink)) }}active{{ end }}">
+          <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+        </li>
+        <script>
+          console.log("Menu Item: {{ .Name }}");
+          console.log("Menu URL: {{ .URL }}");
+          console.log("Current Page RelPermalink: {{ $.RelPermalink }}");
+          console.log("Current Page Permalink: {{ $.Permalink }}");
+        </script>
+        {{ end }}
+      </ul>
+      <div class="social-links">
+        <!--a href="{{ .Site.Params.github }}" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>
+        </a-->
+        <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <!--a href="{{ .Site.Params.email }}">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div-->
     </nav>

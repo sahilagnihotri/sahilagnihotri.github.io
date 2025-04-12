@@ -5,3 +5,33 @@
 <script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/render-katex.js" defer></script>
 
 <script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
+
+{{/*
+    {{ if or .IsHome (eq .RelPermalink "/about/") }}
+    <div class="social-links">
+      <a href="{{ .Site.Params.github }}" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="{{ .Site.Params.email }}">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+    </div>
+    {{ end }}
+*/}}
+
+{{ if (eq .RelPermalink "/about/") }}
+<div class="social-links">
+    <a href="{{ .Site.Params.github }}" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-github"></i> GitHub
+    </a>
+    <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a href="{{ .Site.Params.email }}">
+    <i class="fas fa-envelope"></i> Email
+    </a>
+</div>
+{{ end }}

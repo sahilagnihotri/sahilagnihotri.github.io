@@ -13,7 +13,7 @@ theme = "hugo-xmin"
   description = "A minimal Hugo site using the XMin theme."
   github = "https://github.com/sahilagnihotri"
   linkedin = "https://linkedin.com/in/sahilagnihotri"
-  twitter = "https://twitter.com/sahilagnihotri"
+  email = "mailto:tech.agnihotri@gmail.com"
 
 [permalinks]
   note = "/note/:year/:month/:day/:slug/"
@@ -35,6 +35,11 @@ theme = "hugo-xmin"
     weight = 2
 
   [[menu.main]]
-    name = "About"
+    name = "Blog"
+    url = "/post"
+    weight = 2
+
+  [[menu.main]]
+    name = "Vitae"
     url = "/about"
     weight = 3
