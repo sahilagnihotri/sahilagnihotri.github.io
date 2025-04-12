@@ -111,29 +111,32 @@
         e.preventDefault();
 
         
-        document.body.classList.add('print-mode');
+        setTimeout(() => {
+          
+          document.body.classList.add('print-mode');
 
-        
-        const element = document.querySelector('main'); 
+          
+          const element = document.querySelector('main'); 
 
-        
-        const options = {
-          margin: 10,
-          filename: 'Sahil_Agnihotri_Vitae.pdf',
-          image: { type: 'jpeg', quality: 0.98 },
-          html2canvas: { scale: 2 },
-          jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-        };
+          
+          const options = {
+            margin: 10,
+            filename: 'Sahil_Agnihotri_Vitae.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2 },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+          };
 
-        
-        html2pdf()
-          .set(options)
-          .from(element)
-          .save()
-          .then(() => {
-            
-            document.body.classList.remove('print-mode');
-          });
+          
+          html2pdf()
+            .set(options)
+            .from(element)
+            .save()
+            .then(() => {
+              
+              document.body.classList.remove('print-mode');
+            });
+        }, 500); 
       });
     }
   });
