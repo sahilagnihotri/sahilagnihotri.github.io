@@ -5,6 +5,8 @@ draft: false
 layout: single_withfooter
 ---
 
+<a href="#" class="btn no-pdf" id="download-pdf">Download as PDF</a>
+
 ## Short Intro
 
 I am an experienced Technical Project/Product Architect specializing in successfully delivering cross-platform software solutions (AR, mobile, desktop, web, and embedded systems) across various industries, including CAD, CFD, Geospatial, Surveying, Mining, and AEC BIM. I hold PRINCE2 Agile® and RedHat Enterprise Linux certifications and received the Perforce Versionary award in 2016. Always seeking new challenges and opportunities to learn. Let’s connect!
@@ -13,7 +15,7 @@ I am an experienced Technical Project/Product Architect specializing in successf
 
 ### Experience
 
-#### **<img src="/icons/hexagon.png" alt="Hexagon AB" width="20" height="20"> [Hexagon AB](https://hexagon.com/)**
+#### **<img src="/assets/icons/hexagon.png" alt="Hexagon AB" width="20" height="20"> [Hexagon AB](https://hexagon.com/)**
 **Expert Software Engineer**
 *Mar 2013 – Present (12 years 2 months)*
 Oslo, Norway
@@ -29,21 +31,7 @@ Oslo, Norway
 - Delivered **Collaborative XR** solutions using Hololens, Daqri Smart Helmet, and other platforms.
 - Created demo applications for mapping and CAD data visualization to support developers.
 
-#### **<img src="/icons/dell.png" alt="Dell" width="20" height="20"> [Dell](https://www.dell.com/)**
-**Technical Support Associate**
-*Nov 2012 – Feb 2013 (4 months)*
-Mohali, India
-- Provided technical solutions for Dell products via remote access and phone.
-- Managed escalations and resolved customer issues.
-
-#### **<img src="/icons/zenterio.png" alt="Zenterio AB" width="20" height="20"> [Zenterio AB](https://www.zenterio.com/)**
-**Software Engineer**
-*Feb 2012 – Oct 2012 (9 months)*
-Linkoping, Sweden
-- Developed functionality for viewing media content from DLNA-enabled devices on IPTV STB boxes.
-- Integrated and tested modules in embedded OS.
-
-#### **<img src="/icons/myvr.png" alt="myVR Software AS" width="20" height="20"> [myVR Software AS](https://www.myvr-software.com/)**
+#### **<img src="/assets/icons/myvr.png" alt="myVR Software AS" width="20" height="20"> [myVR Software AS](https://www.myvr-software.com/)**
 **Expert Software Engineer**
 *Aug 2023 – Present (1 year 9 months)*
 Oslo, Norway
@@ -62,8 +50,22 @@ Oslo Area, Norway
 **Software Developer**
 *Mar 2013 – Dec 2018 (5 years 10 months)*
 Oslo Area, Norway
-- Designed anmanaged **mTransfoer**, a tool for GIS and 3D dataset conversion and reprojection.
+- Designed and managed **mTransformer**, a tool for GIS and 3D dataset conversion and reprojection.
 - Developed AR experiences for Smart Streets, Refineries, and Collaborative XR.
+
+#### **<img src="/assets/icons/dell.png" alt="Dell" width="20" height="20"> [Dell](https://www.dell.com/)**
+**Technical Support Associate**
+*Nov 2012 – Feb 2013 (4 months)*
+Mohali, India
+- Provided technical solutions for Dell products via remote access and phone.
+- Managed escalations and resolved customer issues.
+
+#### **<img src="/assets/icons/zenterio.png" alt="Zenterio AB" width="20" height="20"> [Zenterio AB](https://www.zenterio.com/)**
+**Software Engineer**
+*Feb 2012 – Oct 2012 (9 months)*
+Linkoping, Sweden
+- Developed functionality for viewing media content from DLNA-enabled devices on IPTV STB boxes.
+- Integrated and tested modules in embedded OS.
 
 ---
 
@@ -91,3 +93,12 @@ Oslo Area, Norway
 - **Best Member Award** – AIESEC Chandigarh
 
 ---
+
+### <span class="vitae-section-title"><i class="fas fa-address-card"></i> Contact Information</span>
+
+<ul>
+  <li><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+  <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourprofile</a></li>
+  <li><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">github.com/yourusername</a></li>
+  <li><strong>Website:</strong> <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer">yourwebsite.com</a></li>
+</ul>
