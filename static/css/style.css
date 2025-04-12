@@ -6,8 +6,14 @@ body {
 }
 
 /* header and footer areas */
-.menu { padding: 0; }
-.menu li { display: inline-block; }
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px; /* Space between menu items */
+}
+.menu li { display: inline; }
 .article-meta, .menu a {
   text-decoration: none;
   background: #eee;
@@ -20,6 +26,17 @@ footer a { text-decoration: none; }
 hr {
   border-style: dashed;
   color: #ddd;
+}
+
+/* Highlight the active menu item */
+.menu li.active a {
+  color: #ff6600; /* Highlight color for active menu item */
+  border-bottom: 2px solid #ff6600; /* Optional underline */
+}
+
+.menu li a:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  color: #ffffff; /* White text on hover */
 }
 
 /* code */
@@ -49,3 +66,51 @@ table {
 table thead th { border-bottom: 1px solid #ddd; }
 th, td { padding: 5px; }
 thead, tfoot, tr:nth-child(even) { background: #eee; }
+
+.social-links {
+  display: flex;
+  gap: 15px; /* Space between social media icons */
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #333; /* Default icon color */
+  font-size: 1.5em; /* Icon size */
+  margin: 0 10px;
+}
+
+.social-links a:hover {
+  color: #0073e6; /* Hover color */
+  text-decoration: underline;
+}
+
+/* Navigation bar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa; /* Light background color */
+  border-bottom: 1px solid #ddd; /* Optional border */
+}
+
+/* Menu items */
+.menu li a {
+  text-decoration: none;
+  color: #0073e6; /* Default link color */
+  font-weight: bold;
+}
+
+/* Add spacing above the footer */
+footer {
+  margin-top: 10px; /* Adjust the value as needed */
+  padding-top: 10px; /* Optional: Add padding inside the footer */
+}
+
+/* Ensure the footer content is styled properly */
+footer .social-links {
+  margin-top: 10px; /* Add spacing inside the footer for social links */
+  text-align: center; /* Center-align the social links */
+}
