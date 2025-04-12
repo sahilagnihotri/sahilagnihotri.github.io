@@ -1,13 +1,16 @@
 ---
 #title: About
-author: Sahil Agnihotri
+#author: Sahil Agnihotri
 draft: false
 layout: single_withfooter
 ---
 
 <a href="#" class="btn no-pdf" id="download-pdf">Download as PDF</a>
 
-## Short Intro
+# Sahil Agnihotri
+
+
+## Introduction
 
 I am an experienced Technical Project/Product Architect specializing in successfully delivering cross-platform software solutions (AR, mobile, desktop, web, and embedded systems) across various industries, including CAD, CFD, Geospatial, Surveying, Mining, and AEC BIM. I hold PRINCE2 Agile® and RedHat Enterprise Linux certifications and received the Perforce Versionary award in 2016. Always seeking new challenges and opportunities to learn. Let’s connect!
 
@@ -94,11 +97,11 @@ Linkoping, Sweden
 
 ---
 
-### <span class="vitae-section-title"><i class="fas fa-address-card"></i> Contact Information</span>
+<div class="pdf-only">
+  <span class="vitae-section-title"><i class="fas fa-address-card"></i> Contact Information</span>
 
-<ul>
-  <li><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-  <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourprofile</a></li>
-  <li><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">github.com/yourusername</a></li>
-  <li><strong>Website:</strong> <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer">yourwebsite.com</a></li>
-</ul>
+  <ul>
+    <li><strong>Email:</strong> <a href="mailto:tech.agnihotri@gmail.com">tech.agnihotri@gmail.com</a></li>
+    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sahilagnihotri" target="_blank" rel="noopener noreferrer">https://linkedin.com/in/sahilagnihotri/</a></li>
+  </ul>
+</div>

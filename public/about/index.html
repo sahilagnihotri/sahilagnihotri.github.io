@@ -65,13 +65,14 @@
     </nav>
 <div class="article-meta">
 <h1><span class="title"></span></h1>
-<h2 class="author">Sahil Agnihotri</h2>
+
 
 </div>
 
 <main>
 <p><a href="#" class="btn no-pdf" id="download-pdf">Download as PDF</a></p>
-<h2 id="short-intro">Short Intro</h2>
+<h1 id="sahil-agnihotri">Sahil Agnihotri</h1>
+<h2 id="introduction">Introduction</h2>
 <p>I am an experienced Technical Project/Product Architect specializing in successfully delivering cross-platform software solutions (AR, mobile, desktop, web, and embedded systems) across various industries, including CAD, CFD, Geospatial, Surveying, Mining, and AEC BIM. I hold PRINCE2 Agile® and RedHat Enterprise Linux certifications and received the Perforce Versionary award in 2016. Always seeking new challenges and opportunities to learn. Let’s connect!</p>
 <hr>
 <h3 id="experience">Experience</h3>
@@ -156,14 +157,13 @@ Linkoping, Sweden</p>
 <li><strong>Best Member Award</strong> – AIESEC Chandigarh</li>
 </ul>
 <hr>
-<h3 id="contact-information"><span class="vitae-section-title"><i class="fas fa-address-card"></i> Contact Information</span></h3>
-<ul>
-  <li><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-  <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourprofile</a></li>
-  <li><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">github.com/yourusername</a></li>
-  <li><strong>Website:</strong> <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer">yourwebsite.com</a></li>
-</ul>
-
+<div class="pdf-only">
+  <span class="vitae-section-title"><i class="fas fa-address-card"></i> Contact Information</span>
+  <ul>
+    <li><strong>Email:</strong> <a href="mailto:tech.agnihotri@gmail.com">tech.agnihotri@gmail.com</a></li>
+    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sahilagnihotri" target="_blank" rel="noopener noreferrer">https://linkedin.com/in/sahilagnihotri/</a></li>
+  </ul>
+</div>
 </main>
 
 <ul>
@@ -215,29 +215,32 @@ Linkoping, Sweden</p>
         e.preventDefault();
 
         
-        document.body.classList.add('print-mode');
+        setTimeout(() => {
+          
+          document.body.classList.add('print-mode');
 
-        
-        const element = document.querySelector('main'); 
+          
+          const element = document.querySelector('main'); 
 
-        
-        const options = {
-          margin: 10,
-          filename: 'Sahil_Agnihotri_Vitae.pdf',
-          image: { type: 'jpeg', quality: 0.98 },
-          html2canvas: { scale: 2 },
-          jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-        };
+          
+          const options = {
+            margin: 10,
+            filename: 'Sahil_Agnihotri_Vitae.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2 },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+          };
 
-        
-        html2pdf()
-          .set(options)
-          .from(element)
-          .save()
-          .then(() => {
-            
-            document.body.classList.remove('print-mode');
-          });
+          
+          html2pdf()
+            .set(options)
+            .from(element)
+            .save()
+            .then(() => {
+              
+              document.body.classList.remove('print-mode');
+            });
+        }, 500); 
       });
     }
   });

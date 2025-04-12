@@ -284,3 +284,20 @@ ul li {
   font-size: 12px; /* Example: Adjust font size for the PDF */
   line-height: 1.5;
 }
+
+/* Hide the contact section by default on the webpage */
+.pdf-only {
+  display: none;
+}
+
+/* Make the contact section visible in the PDF */
+@media print {
+  .pdf-only {
+    display: block;
+  }
+}
+
+/* Hide the "Download as PDF" button in print mode */
+.print-mode .pdf-only {
+  display: block;
+}
