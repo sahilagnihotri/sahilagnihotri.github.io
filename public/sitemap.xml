@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/note/another-note/</loc>
+    <loc>http://localhost:1313/note/2017/06/14/another-note/</loc>
     <lastmod>2017-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
@@ -11,10 +11,10 @@
     <loc>http://localhost:1313/categories/example/</loc>
     <lastmod>2017-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/note/</loc>
     <lastmod>2017-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/note/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2017-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
@@ -23,10 +23,10 @@
     <loc>http://localhost:1313/tags/tutorial/</loc>
     <lastmod>2017-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/note/a-quick-note/</loc>
+    <loc>http://localhost:1313/note/2017/06/13/a-quick-note/</loc>
     <lastmod>2017-06-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/2016-02-14-hello-markdown/</loc>
+    <loc>http://localhost:1313/post/2016/02/14/a-plain-markdown-post/</loc>
     <lastmod>2016-02-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/blogdown/</loc>
@@ -51,5 +51,11 @@
     <lastmod>2016-02-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
+  </url><url>
+    <loc>http://localhost:1313/assignments/assignment1/</loc>
+  </url><url>
+    <loc>http://localhost:1313/assignments/assignment2/</loc>
+  </url><url>
+    <loc>http://localhost:1313/assignments/</loc>
   </url>
 </urlset>

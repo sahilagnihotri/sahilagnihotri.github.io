@@ -1,7 +1,12 @@
 baseURL = "https://sahilagnihotri.github.io/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "sahilagnihotri github pages site"
 theme = "hugo-xmin"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [params]
   author = "Sahil Agnihotri"
@@ -10,6 +15,14 @@ theme = "hugo-xmin"
   linkedin = "https://linkedin.com/in/sahilagnihotri"
   twitter = "https://twitter.com/sahilagnihotri"
 
+[permalinks]
+  note = "/note/:year/:month/:day/:slug/"
+  post = "/post/:year/:month/:day/:slug/"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
 [menu]
   [[menu.main]]
     name = "Home"
@@ -17,6 +30,11 @@ theme = "hugo-xmin"
     weight = 1
 
   [[menu.main]]
+    name = "Assignments"
+    url = "/assignments"
+    weight = 2
+
+  [[menu.main]]
     name = "About"
     url = "/about"
-    weight = 2
+    weight = 3
