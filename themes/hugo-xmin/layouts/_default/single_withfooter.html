@@ -43,3 +43,40 @@
 {{ end }}
 
 {{ partial "footer.html" . }}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const downloadButton = document.getElementById('download-pdf');
+    if (downloadButton) {
+      downloadButton.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        // Add a class to the body to apply print styles
+        document.body.classList.add('print-mode');
+
+        // Select the content to export
+        const element = document.querySelector('main'); // Adjust the selector to target your content
+
+        // Configure html2pdf options
+        const options = {
+          margin: 10,
+          filename: 'Sahil_Agnihotri_Vitae.pdf',
+          image: { type: 'jpeg', quality: 0.98 },
+          html2canvas: { scale: 2 },
+          jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        };
+
+        // Generate the PDF
+        html2pdf()
+          .set(options)
+          .from(element)
+          .save()
+          .then(() => {
+            // Remove the print-mode class after generating the PDF
+            document.body.classList.remove('print-mode');
+          });
+      });
+    }
+  });
+</script>

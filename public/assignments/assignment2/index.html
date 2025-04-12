@@ -6,8 +6,9 @@
     <title>Assignment2 | sahilagnihotri github pages site</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
   </head>
 
   <body>
@@ -100,3 +101,40 @@
   </body>
 </html>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const downloadButton = document.getElementById('download-pdf');
+    if (downloadButton) {
+      downloadButton.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        
+        document.body.classList.add('print-mode');
+
+        
+        const element = document.querySelector('main'); 
+
+        
+        const options = {
+          margin: 10,
+          filename: 'Sahil_Agnihotri_Vitae.pdf',
+          image: { type: 'jpeg', quality: 0.98 },
+          html2canvas: { scale: 2 },
+          jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        };
+
+        
+        html2pdf()
+          .set(options)
+          .from(element)
+          .save()
+          .then(() => {
+            
+            document.body.classList.remove('print-mode');
+          });
+      });
+    }
+  });
+</script>
