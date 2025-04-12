@@ -2,54 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://sahilagnihotri.github.io/categories/</loc>
     <lastmod>2025-04-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/example/</loc>
+    <loc>https://sahilagnihotri.github.io/categories/example/</loc>
     <lastmod>2025-04-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>https://sahilagnihotri.github.io/post/</loc>
     <lastmod>2025-04-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://sahilagnihotri.github.io/</loc>
     <lastmod>2025-04-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/2025/04/12/a-quick-note/</loc>
+    <loc>https://sahilagnihotri.github.io/post/2025/04/12/a-quick-note/</loc>
     <lastmod>2025-04-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/note/2016/02/14/a-test-markdown-post/</loc>
+    <loc>https://sahilagnihotri.github.io/note/2016/02/14/a-test-markdown-post/</loc>
     <lastmod>2016-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/blogdown/</loc>
+    <loc>https://sahilagnihotri.github.io/tags/blogdown/</loc>
     <lastmod>2016-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/hugo/</loc>
+    <loc>https://sahilagnihotri.github.io/categories/hugo/</loc>
     <lastmod>2016-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/markdown/</loc>
+    <loc>https://sahilagnihotri.github.io/tags/markdown/</loc>
     <lastmod>2016-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mathjax/</loc>
+    <loc>https://sahilagnihotri.github.io/tags/mathjax/</loc>
     <lastmod>2016-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/note/</loc>
+    <loc>https://sahilagnihotri.github.io/note/</loc>
     <lastmod>2016-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/pandoc/</loc>
+    <loc>https://sahilagnihotri.github.io/tags/pandoc/</loc>
     <lastmod>2016-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/rstudio/</loc>
+    <loc>https://sahilagnihotri.github.io/tags/rstudio/</loc>
     <lastmod>2016-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://sahilagnihotri.github.io/tags/</loc>
     <lastmod>2016-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://sahilagnihotri.github.io/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/assignments/assignment1/</loc>
+    <loc>https://sahilagnihotri.github.io/assignments/assignment1/</loc>
   </url><url>
-    <loc>http://localhost:1313/assignments/assignment2/</loc>
+    <loc>https://sahilagnihotri.github.io/assignments/assignment2/</loc>
   </url><url>
-    <loc>http://localhost:1313/assignments/</loc>
+    <loc>https://sahilagnihotri.github.io/assignments/</loc>
   </url>
 </urlset>
