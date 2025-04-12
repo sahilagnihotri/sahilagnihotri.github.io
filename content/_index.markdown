@@ -2,9 +2,17 @@
 title: Sahil Agnihotri
 layout: single
 ---
+<div class="about-section">
+  <div class="about-text">
 
-## Short Intro
+I am an engineer and explorer passionate about delivering innovative solutions. With expertise in cross-platform software development across industries like CAD, CFD, and AEC BIM, I hold certifications in PRINCE2 Agile® and RedHat Enterprise Linux. I was honored with the Perforce Versionary award in 2016 and also hold a degree in Naturopathy and Yoga, blending science with holistic wellness.
 
-Engineer by profession, explorer and inventor at heart with thirst for knowledge. I specialize in successfully delivering cross-platform software solutions (AR, mobile, desktop, web, and embedded systems) across various industries, including CAD, CFD, Geospatial, Surveying, Mining, and AEC BIM. I hold PRINCE2 Agile® and RedHat Enterprise Linux certifications and received the Perforce Versionary award in 2016. Always seeking new challenges and opportunities to learn. Let’s connect!
+Outside of work, I enjoy traveling, arts, and yoga. In my free time, I love cooking, hiking, photography, and dancing. Having visited 35 countries, I embrace every opportunity to grow, connect, and explore new horizons.
+
+</div>
+  <div class="about-image">
+    <img src="assets/image.png" alt="Sahil Agnihotri" />
+  </div>
+</div>
 
 ---
