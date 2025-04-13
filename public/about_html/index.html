@@ -57,7 +57,9 @@
         
       </ul>
       <div class="social-links">
-        
+        <a href="https://github.com/sahilagnihotri" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>
+        </a>
         <a href="https://linkedin.com/in/sahilagnihotri" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-linkedin"></i>
         </a>
@@ -65,12 +67,13 @@
     </nav>
 <div class="article-meta">
 <h1><span class="title"></span></h1>
-<h2 class="author">Sahil Agnihotri</h2>
+
 
 </div>
 
 <main>
-<h2 id="short-intro">Short Intro</h2>
+<h1 id="sahil-agnihotri">Sahil Agnihotri</h1>
+<h2 id="introduction">Introduction</h2>
 <p>I am an experienced Technical Project/Product Architect specializing in successfully delivering cross-platform software solutions (AR, mobile, desktop, web, and embedded systems) across various industries, including CAD, CFD, Geospatial, Surveying, Mining, and AEC BIM. I hold PRINCE2 Agile® and RedHat Enterprise Linux certifications and received the Perforce Versionary award in 2016. Always seeking new challenges and opportunities to learn. Let’s connect!</p>
 <hr>
 <h3 id="experience"><span class="vitae-section-title"><i class="fas fa-briefcase"></i> Experience</span></h3>
@@ -128,6 +131,13 @@
   <li><strong>Best Member Award</strong> – AIESEC Chandigarh</li>
 </ul>
 <hr>
+<div class="pdf-only-view">
+  <span class="vitae-section-title"><i class="fas fa-address-card"></i> Contact Information</span>
+  <ul>
+    <li><strong>Email:</strong> <a href="mailto:tech.agnihotri@gmail.com">tech.agnihotri@gmail.com</a></li>
+    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sahilagnihotri" target="_blank" rel="noopener noreferrer">https://linkedin.com/in/sahilagnihotri/</a></li>
+  </ul>
+</div>
 <p><a href="#" class="btn no-pdf" id="download-pdf">Download as PDF</a></p>
 
 </main>
@@ -181,7 +191,11 @@
             margin: 10,
             filename: 'Sahil_Agnihotri_Vitae.pdf',
             image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 2 },
+            html2canvas: {
+              scale: 2, 
+              letterRendering: true, 
+              useCORS: true 
+            },
             jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
           };
 

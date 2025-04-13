@@ -1,4 +1,5 @@
-body {
+body
+{
   max-width: 800px;
   margin: auto;
   padding: 1em;
@@ -11,89 +12,25 @@ body {
   line-height: 1.6;
 }
 
-/* header and footer areas */
-.menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 15px; /* Space between menu items */
+.title
+{
+  font-size: 1.1em;
 }
-.menu li { display: inline; }
-.article-meta, .menu a {
-  text-decoration: none;
-  background: #eee;
-  padding: 5px;
-  border-radius: 5px;
+
+footer a
+{
+   text-decoration: none;
 }
-.menu, .article-meta, footer { text-align: center; }
-.title { font-size: 1.1em; }
-footer a { text-decoration: none; }
-hr {
+
+hr
+{
   border-style: dashed;
   color: #ddd;
 }
 
-/* Highlight the active menu item */
-.menu li.active a {
-  color: #ff6600; /* Highlight color for active menu item */
-  border-bottom: 2px solid #ff6600; /* Optional underline */
-}
-
-.menu li a:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  color: #ffffff; /* White text on hover */
-}
-
-/* code */
-pre {
-  border: 1px solid #ddd;
-  box-shadow: 5px 5px 5px #eee;
-  padding: 1em;
-  overflow-x: auto;
-}
-code { background: #f9f9f9; }
-pre code { background: none; }
-
-/* misc elements */
-img, iframe, video { max-width: 100%; }
-main { hyphens: auto; }
-blockquote {
-  background: #f9f9f9;
-  border-left: 5px solid #ccc;
-  padding: 3px 1em 3px;
-}
-
-table {
-  margin: auto;
-  border-top: 1px solid #666;
-  border-bottom: 1px solid #666;
-}
-table thead th { border-bottom: 1px solid #ddd; }
-th, td { padding: 5px; }
-thead, tfoot, tr:nth-child(even) { background: #eee; }
-
-.social-links {
-  display: flex;
-  gap: 15px; /* Space between social media icons */
-  margin-top: 20px;
-  text-align: center;
-}
-
-.social-links a {
-  text-decoration: none;
-  color: #333; /* Default icon color */
-  font-size: 1.5em; /* Icon size */
-  margin: 0 10px;
-}
-
-.social-links a:hover {
-  color: #0073e6; /* Hover color */
-  text-decoration: underline;
-}
-
 /* Navigation bar container */
-.navbar {
+.navbar
+{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -102,21 +39,135 @@ thead, tfoot, tr:nth-child(even) { background: #eee; }
   border-bottom: 1px solid #ddd; /* Optional border */
 }
 
+/* header and footer areas */
+.menu
+{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+padding-top: 10px;
+  gap: 15px; /* Space between menu items */
+}
+
+.menu li
+{
+  display: inline;
+  margin-right: 10px; /* Space between menu items */
+}
+
 /* Menu items */
-.menu li a {
+.menu li a
+{
   text-decoration: none;
   color: #0073e6; /* Default link color */
   font-weight: bold;
 }
 
+.article-meta, .menu a
+{
+  text-decoration: none;
+  background: #eee;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.menu, .article-meta, footer
+{
+  text-align: center;
+}
+
+/* Highlight the active menu item */
+.menu li.active a
+{
+  color: #ff6600; /* Highlight color for active menu item */
+  border-bottom: 2px solid #ff6600; /* Optional underline */
+}
+
+.menu li a:hover
+{
+  background-color: #0056b3; /* Darker blue on hover */
+  color: #ffffff; /* White text on hover */
+}
+
+/* code */
+pre
+{
+  border: 1px solid #ddd;
+  box-shadow: 5px 5px 5px #eee;
+  padding: 1em;
+  overflow-x: auto;
+}
+code
+{
+  background: #f9f9f9;
+}
+
+pre code
+{
+  background: none;
+}
+
+/* misc elements */
+img, iframe, video
+{
+  max-width: 100%;
+}
+
+main
+{
+  hyphens: auto;
+}
+
+blockquote
+{
+  background: #f9f9f9;
+  border-left: 5px solid #ccc;
+  padding: 3px 1em 3px;
+}
+
+table
+{
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee; }
+
+.social-links
+{
+  display: flex;
+  gap: 15px; /* Space between social media icons */
+  text-align: center;
+}
+
+.social-links a
+{
+  text-decoration: none;
+  color: #333; /* Default icon color */
+  font-size: 1.5em; /* Icon size */
+  margin: 0 10px;
+}
+
+.social-links a:hover
+{
+  color: #0073e6; /* Hover color */
+  text-decoration: underline;
+}
+
 /* Add spacing above the footer */
-footer {
+footer
+{
   margin-top: 10px; /* Adjust the value as needed */
   padding-top: 10px; /* Optional: Add padding inside the footer */
 }
 
 /* Ensure the footer content is styled properly */
-footer .social-links {
+footer .social-links
+{
   margin-top: 10px; /* Add spacing inside the footer for social links */
   text-align: center; /* Center-align the social links */
 }
@@ -124,7 +175,8 @@ footer .social-links {
 /*---------------------------------------------------------------
 /* About Section */
 
-.about-section {
+.about-section
+{
   display: flex;
   flex-wrap: wrap; /* Allow wrapping for smaller screens */
   align-items: flex-start;
@@ -133,7 +185,8 @@ footer .social-links {
   margin-top: 20px;
 }
 
-.about-text {
+.about-text
+{
   flex: 2; /* Equal space for text and image */
   text-align: left;
   font-size: 1.2em; /* Adjust text size for better balance */
@@ -141,19 +194,22 @@ footer .social-links {
   color: #333; /* Softer text color */
 }
 
-.about-image {
+.about-image
+{
   flex: 1; /* Equal space for text and image */
   text-align: right; /* Center the image */
 }
 
-.about-image img {
+.about-image img
+{
   max-width: 100%; /* Ensure the image scales properly */
   height: auto;
   border-radius: 10px; /* Optional: Add rounded corners */
   padding-top: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px)
+{
   .about-section {
     flex-direction: column; /* Stack text and image vertically on smaller screens */
     align-items: center;
@@ -271,6 +327,8 @@ ul li {
 @media print {
   .no-pdf {
     display: none;
+    word-spacing: 0.1em; /* Ensure proper word spacing in the PDF */
+
   }
 }
 
@@ -283,6 +341,25 @@ ul li {
 .print-mode {
   font-size: 12px; /* Example: Adjust font size for the PDF */
   line-height: 1.5;
+  text-align: justify;
+  font-family: 'Arial', sans-serif; /* Use a web-safe font */
+  word-spacing: 0.1em; /* Ensure proper word spacing in the PDF */
+
+}
+
+.short-intro {
+  font-size: 1.2em; /* Adjust font size */
+  line-height: 1.6; /* Improve readability */
+  color: #333; /* Softer text color */
+  margin-bottom: 20px; /* Add spacing below */
+  text-align: justify; /* Justify the text for better alignment */
+  word-spacing: 0.1em; /* Add consistent spacing between words */
+}
+
+.print-mode .short-intro1 {
+  font-size: 1.2em; /* Slightly smaller font for PDF */
+  color: #000; /* Ensure text is black in the PDF */
+
 }
 
 /* Hide the contact section by default on the webpage */
@@ -294,6 +371,7 @@ ul li {
 @media print {
   .pdf-only {
     display: block;
+    padding: 10px;
   }
 }
 

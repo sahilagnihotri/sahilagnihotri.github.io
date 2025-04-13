@@ -57,7 +57,9 @@
         
       </ul>
       <div class="social-links">
-        
+        <a href="https://github.com/sahilagnihotri" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>
+        </a>
         <a href="https://linkedin.com/in/sahilagnihotri" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-linkedin"></i>
         </a>
@@ -73,7 +75,9 @@
 <p><a href="#" class="btn no-pdf" id="download-pdf">Download as PDF</a></p>
 <h1 id="sahil-agnihotri">Sahil Agnihotri</h1>
 <h2 id="introduction">Introduction</h2>
-<p>I am an experienced Technical Project/Product Architect specializing in successfully delivering cross-platform software solutions (AR, mobile, desktop, web, and embedded systems) across various industries, including CAD, CFD, Geospatial, Surveying, Mining, and AEC BIM. I hold PRINCE2 Agile® and RedHat Enterprise Linux certifications and received the Perforce Versionary award in 2016. Always seeking new challenges and opportunities to learn. Let’s connect!</p>
+<div class="short-intro">
+  I am an experienced Technical Project/Product Architect specializing in successfully delivering cross-platform software solutions (AR, mobile, desktop, web, and embedded systems) across various industries, including CAD, CFD, Geospatial, Surveying, Mining, and AEC BIM. I hold PRINCE2 Agile® and RedHat Enterprise Linux certifications and received the Perforce Versionary award in 2016. Always seeking new challenges and opportunities to learn. Let’s connect!
+</div>
 <hr>
 <h3 id="experience">Experience</h3>
 <h4><strong><img src="/assets/icons/hexagon.png" alt="Hexagon AB" width="20" height="20"> <a href="https://hexagon.com/">Hexagon AB</a></strong></h4>
@@ -227,7 +231,11 @@ Linkoping, Sweden</p>
             margin: 10,
             filename: 'Sahil_Agnihotri_Vitae.pdf',
             image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 2 },
+            html2canvas: {
+              scale: 2, 
+              letterRendering: true, 
+              useCORS: true 
+            },
             jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
           };
 
