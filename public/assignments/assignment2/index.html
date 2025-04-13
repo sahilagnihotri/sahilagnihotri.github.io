@@ -57,7 +57,9 @@
         
       </ul>
       <div class="social-links">
-        
+        <a href="https://github.com/sahilagnihotri" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>
+        </a>
         <a href="https://linkedin.com/in/sahilagnihotri" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-linkedin"></i>
         </a>
@@ -123,7 +125,11 @@
             margin: 10,
             filename: 'Sahil_Agnihotri_Vitae.pdf',
             image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 2 },
+            html2canvas: {
+              scale: 2, 
+              letterRendering: true, 
+              useCORS: true 
+            },
             jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
           };
 
