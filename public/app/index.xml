@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apps on sahilagnihotri github pages site</title>
+    <link>http://localhost:1313/app/</link>
+    <description>Recent content in Apps on sahilagnihotri github pages site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenVault</title>
+      <link>http://localhost:1313/app/openvault/</link>
+      <pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/app/openvault/</guid>
+      <description>&lt;h2 id=&#34;openvault&#34;&gt;OpenVault&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;OpenVault is a simple vault application which allows user to have secure Photos, Videos and documents. It has basic functionality to view photos, videos and documents.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;privacy-policy-for-openvault&#34;&gt;Privacy Policy for OpenVault&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;Data Collection&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;We do not collect, store, or transmit any personal data&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;Encryption&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;All photos are encrypted locally on your device&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;iCloud (planned)&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Optional iCloud sync uses Apple&amp;#39;s secure infrastructure&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;Analytics&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;We do not use analytics or tracking&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;Privacy is a basic human right.&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;&#xA;&lt;h2 id=&#34;contact-sahilagnihotrise&#34;&gt;Contact: &lt;a href=&#34;mailto:sahil@agnihotri.se&#34;&gt;sahil@agnihotri.se&lt;/a&gt;&lt;/h2&gt;</description>
+    </item>
+  </channel>
+</rss>

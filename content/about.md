@@ -5,6 +5,8 @@ draft: false
 layout: single_withfooter
 ---
 
+<div class="content-section">
+
 <a href="#" class="btn no-pdf" id="download-pdf">Download as PDF</a>
 
 # Sahil Agnihotri
@@ -13,7 +15,7 @@ layout: single_withfooter
 ## Introduction
 
 <div class="short-intro">
-  I am an experienced Technical Project/Product Architect specializing in successfully delivering cross-platform software solutions (AR, mobile, desktop, web, and embedded systems) across various industries, including CAD, CFD, Geospatial, Surveying, Mining, and AEC BIM. I hold PRINCE2 Agile® and RedHat Enterprise Linux certifications and received the Perforce Versionary award in 2016. Always seeking new challenges and opportunities to learn. Let’s connect!
+  I am an experienced Technical Project/Product Architect specializing in successfully delivering cross-platform software solutions (AR, mobile, desktop, web, and embedded systems) across various industries, including CAD, CFD, Geospatial, Surveying, Mining, and AEC BIM. I hold PRINCE2 Agile® and RedHat Enterprise Linux certifications and received the Perforce Versionary award in 2016. Always seeking new challenges and opportunities to learn. Let's connect!
 </div>
 
 ---
@@ -106,4 +108,6 @@ Linkoping, Sweden
     <li><strong>Email:</strong> <a href="mailto:tech.agnihotri@gmail.com">tech.agnihotri@gmail.com</a></li>
     <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sahilagnihotri" target="_blank" rel="noopener noreferrer">https://linkedin.com/in/sahilagnihotri/</a></li>
   </ul>
+</div>
+
 </div>

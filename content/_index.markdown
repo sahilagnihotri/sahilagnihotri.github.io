@@ -3,7 +3,9 @@ title: Sahil Agnihotri
 layout: single
 ---
 <div class="about-section">
-  <div class="about-text">
+<div class="about-text">
+
+# Sahil Agnihotri
 
 I am an engineer and explorer passionate about creating innovative solutions. With expertise in cross-platform software project management, architecture, development and XR applications, I have delivered scalable solutions across industries like Telco, CAD, and AEC BIM. I hold a postgraduate degree in Machine Learning, certifications in PRINCE2 Agile® and RedHat Enterprise Linux, and a degree in Naturopathy and Yoga, blending science with wellness.
 
