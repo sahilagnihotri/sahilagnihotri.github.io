@@ -1,25 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Assignments on sahilagnihotri github pages site</title>
-    <link>http://localhost:1313/assignments/</link>
-    <description>Recent content in Assignments on sahilagnihotri github pages site</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="http://localhost:1313/assignments/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Assignment1</title>
-      <link>http://localhost:1313/assignments/assignment1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/assignments/assignment1/</guid>
-      <description>&lt;h1 id=&#34;assignment1&#34;&gt;Assignment1&lt;/h1&gt;&#xA;&lt;h2 id=&#34;code-sample&#34;&gt;Code sample:&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Sample code heres&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;hugoyaml-the-config-file&#34;&gt;&lt;code&gt;hugo.yaml&lt;/code&gt; (the config file)&lt;/h2&gt;&#xA;&lt;p&gt;For this example site, I defined permalinks for two sections, &lt;code&gt;post&lt;/code&gt; and &lt;code&gt;note&lt;/code&gt;, so that the links to pages under these directories will contain the date info, e.g., &lt;code&gt;https://xmin.yihui.org/post/2016/02/14/a-plain-markdown-post/&lt;/code&gt;. This is optional, and it is up to your personal taste of URLs.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;permalinks&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;note&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/note/:year/:month/:day/:slug/&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;post&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/post/:year/:month/:day/:slug/&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;</description>
-    </item>
-    <item>
-      <title>Assignment2</title>
-      <link>http://localhost:1313/assignments/assignment2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/assignments/assignment2/</guid>
-      <description>&lt;h1 id=&#34;assignment2&#34;&gt;Assignment2&lt;/h1&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Assignments on sahilagnihotri github pages site</title><link>https://sahil.agnihotri.se/assignments/</link><description>Recent content in Assignments on sahilagnihotri github pages site</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://sahil.agnihotri.se/assignments/index.xml" rel="self" type="application/rss+xml"/><item><title>Assignment1</title><link>https://sahil.agnihotri.se/assignments/assignment1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sahil.agnihotri.se/assignments/assignment1/</guid><description>&lt;h1 id="assignment1">Assignment1&lt;/h1>
+&lt;h2 id="code-sample">Code sample:&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>Sample code heres
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="hugoyaml-the-config-file">&lt;code>hugo.yaml&lt;/code> (the config file)&lt;/h2>
+&lt;p>For this example site, I defined permalinks for two sections, &lt;code>post&lt;/code> and &lt;code>note&lt;/code>, so that the links to pages under these directories will contain the date info, e.g., &lt;code>https://xmin.yihui.org/post/2016/02/14/a-plain-markdown-post/&lt;/code>. This is optional, and it is up to your personal taste of URLs.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">permalinks&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">note&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;/note/:year/:month/:day/:slug/&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">post&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;/post/:year/:month/:day/:slug/&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr></description></item><item><title>Assignment2</title><link>https://sahil.agnihotri.se/assignments/assignment2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sahil.agnihotri.se/assignments/assignment2/</guid><description>&lt;h1 id="assignment2">Assignment2&lt;/h1></description></item></channel></rss>

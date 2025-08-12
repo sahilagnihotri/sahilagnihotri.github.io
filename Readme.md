@@ -7,6 +7,9 @@ hugo server
 # For full rebuilds
 hugo server --disableFastRender
 hugo --cleanDestinationDir
+
+# Build for production (minified)
+hugo --minify
 ```
 
 
