@@ -1,6 +1,6 @@
-#baseURL = "https://sahilagnihotri.github.io/"
+baseURL = "https://sahilagnihotri.github.io/"
 # My webpage
-baseURL = "https://sahil.agnihotri.se/"
+#baseURL = "https://sahil.agnihotri.se/"
 
 languageCode = "en-us"
 title = "sahilagnihotri github pages site"
