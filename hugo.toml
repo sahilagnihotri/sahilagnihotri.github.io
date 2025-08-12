@@ -1,4 +1,7 @@
-baseURL = "https://sahilagnihotri.github.io/"
+#baseURL = "https://sahilagnihotri.github.io/"
+# My webpage
+baseURL = "https://sahil.agnihotri.se/"
+
 languageCode = "en-us"
 title = "sahilagnihotri github pages site"
 theme = "hugo-xmin"
@@ -28,6 +31,11 @@ theme = "hugo-xmin"
     name = "Home"
     url = "/"
     weight = 1
+
+  [[menu.main]]
+    name = "Apps"
+    url = "/app"
+    weight = 2
 
   [[menu.main]]
     name = "Assignments"
