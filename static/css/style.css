@@ -81,6 +81,11 @@ body {
   font-size: 16px;
 }
 
+/* Override webkit default link styling */
+a:-webkit-any-link {
+  color: inherit;
+}
+
 .title {
   font-size: 2rem;
   font-weight: 700;
@@ -299,12 +304,12 @@ div:empty:not(.social-links):not([class*="icon"]) {
     background-color: transparent !important;
     color: var(--color-primary);
   }
-  
+
   .menu li a {
     border: none !important;
     outline: none !important;
   }
-  
+
   .menu li a:focus {
     border: none !important;
     outline: none !important;
@@ -359,17 +364,20 @@ code {
     color: #000 !important;
   }
 
-  a {
+  a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:active,
+  a:-webkit-any-link,
+  .vitae-card a,
+  .vitae-card h4 a {
     color: #000 !important;
-    text-decoration: underline !important;
+    text-decoration: none !important;
     background: #fff !important;
   }
 
-  nav, footer, .no-print {
-    display: none !important;
-  }
-
-  .social-links {
+  nav, footer, .no-print, .export-buttons, .social-links {
     display: none !important;
   }
 
@@ -554,13 +562,28 @@ footer .social-links {
 /*---------------------------------------------------------------
 /* About Section */
 
+.hero-header {
+  text-align: left;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+}
+
+.main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
 .about-section {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 2rem;
+  gap: 3rem;
   align-items: center;
   margin: 0;
-  padding: 0;
+  padding: 2rem 0;
   border: none;
 }
 
@@ -570,6 +593,14 @@ footer .social-links {
   color: var(--color-text-secondary);
 }
 
+.intro-text {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
 .about-image {
   display: flex;
   justify-content: center;
@@ -577,8 +608,8 @@ footer .social-links {
 }
 
 .about-image img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid var(--color-primary);
@@ -770,12 +801,22 @@ footer .social-links {
     margin: 1rem 0;
   }
 
+  .main-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-header {
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
   .about-section {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 1rem 0;
     border: none;
   }
 
@@ -784,8 +825,8 @@ footer .social-links {
   }
 
   .about-image img {
-    width: 140px;
-    height: 140px;
+    width: 180px;
+    height: 180px;
   }
 
   .short-intro {
@@ -896,6 +937,10 @@ footer .social-links {
   .social-links a {
     width: 44px;
     height: 44px;
+    font-size: 0;
+  }
+
+  .social-links a i {
     font-size: 1rem;
   }
 }
@@ -1001,10 +1046,31 @@ footer .social-links {
   margin: 0 0 1rem 0;
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--color-primary);
+  color: var(--color-text);
   display: flex;
   align-items: center;
   gap: 0.75rem;
+}
+
+.vitae-card h4 a,
+.vitae-card h4 a:-webkit-any-link {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.vitae-card h4 a:hover {
+  color: var(--color-primary) !important;
+  text-decoration: underline;
+}
+
+/* Force all links in vitae cards to be white for better visibility */
+.vitae-card a,
+.vitae-card a:-webkit-any-link {
+  color: #ffffff !important;
+}
+
+.vitae-card a:hover {
+  color: var(--color-primary) !important;
 }
 
 .vitae-card h4 img {
@@ -1206,7 +1272,8 @@ main ul li,
 .print-mode .social-links,
 .print-mode nav,
 .print-mode footer,
-.print-mode .export-buttons {
+.print-mode .export-buttons,
+.print-mode .navbar .social-links {
   display: none !important;
 }
 
@@ -1382,4 +1449,40 @@ main {
 /* Hide the "Download as PDF" button in print mode */
 .print-mode .pdf-only {
   display: block;
+  margin-top: 20pt;
+  padding: 12pt;
+  border: none !important;
+  border-radius: 0;
+  background: #fff !important;
+}
+
+.print-mode .pdf-only .vitae-section-title {
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 8pt;
+  color: #000 !important;
+}
+
+.print-mode .pdf-only ul {
+  margin-top: 8pt;
+  margin-bottom: 8pt;
+  padding-left: 20pt;
+}
+
+.print-mode .pdf-only li {
+  margin-bottom: 6pt;
+  color: #000 !important;
+}
+
+.print-mode a,
+.print-mode a:link,
+.print-mode a:visited,
+.print-mode a:hover,
+.print-mode a:active,
+.print-mode a:-webkit-any-link,
+.print-mode .vitae-card a,
+.print-mode .vitae-card h4 a {
+  color: #000 !important;
+  text-decoration: none !important;
+  background: #fff !important;
 }
