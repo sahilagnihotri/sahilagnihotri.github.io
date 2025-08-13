@@ -1,3 +1,34 @@
+/* Fix for selected menu button being larger than others on mobile */
+/* Place this after the default mobile menu styles for highest specificity */
+
+@media (max-width: 768px) {
+  .menu li,
+  .menu li.active,
+  .menu li.selected,
+  .menu li.current {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .menu li a,
+  .menu li.active a,
+  .menu li.selected a,
+  .menu li.current a {
+    width: 100%;
+    margin: 0;
+    padding: 0.625rem 1rem;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    border-radius: var(--border-radius);
+  }
+  .menu li.active a,
+  .menu li.selected a,
+  .menu li.current a {
+    background: var(--color-surface-hover);
+    color: var(--color-primary);
+  }
+}
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root {
