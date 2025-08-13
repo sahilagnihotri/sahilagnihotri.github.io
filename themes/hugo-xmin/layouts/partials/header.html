@@ -19,16 +19,23 @@
       </button>
       <ul class="menu" id="nav-menu">
         {{ range .Site.Menus.main }}
-        <li class="{{ if or (eq (lower .URL) (lower $.RelPermalink)) (eq (lower .URL) (lower $.Permalink)) }}active{{ end }}">
-          <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+        {{ $itemURL := replaceRE "/$" "" .URL }}
+        {{ $pageURL := replaceRE "/$" "" $.RelPermalink }}
+        {{ $isCurrent := eq $pageURL $itemURL }}
+        <li class="{{ if $isCurrent }}active{{ end }}">
+          <a href="{{ .URL | relURL }}"{{ if $isCurrent }} aria-current="page"{{ end }}>{{ .Name }}</a>
         </li>
+    {{/* Normalize trailing slashes for comparison */}}
+  {{ $itemURL := replaceRE "/$" "" .URL }}
+  {{ $pageURL := replaceRE "/$" "" $.RelPermalink }}
+  {{ $isCurrent := or (eq $pageURL $itemURL) (and (eq $itemURL "") (eq $pageURL "")) }}
         <script>
           console.log("Menu Item: {{ .Name }}");
           console.log("Menu URL: {{ .URL }}");
           console.log("Current Page RelPermalink: {{ $.RelPermalink }}");
           console.log("Current Page Permalink: {{ $.Permalink }}");
         </script>
-        {{ end }}
+  {{ end }}
       </ul>
       <div class="social-links">
         <a href="{{ .Site.Params.github }}" target="_blank" rel="noopener noreferrer">
