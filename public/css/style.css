@@ -7,28 +7,28 @@
   --color-success: #10b981;
   --color-warning: #f59e0b;
   --color-danger: #ef4444;
-  
+
   --color-background: #0f172a;
   --color-surface: #1e293b;
   --color-surface-hover: #334155;
   --color-card: #1e293b;
-  
+
   --color-text: #f8fafc;
   --color-text-secondary: #cbd5e1;
   --color-text-muted: #94a3b8;
-  
+
   --color-border: #334155;
   --color-border-light: #475569;
-  
+
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.2);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.2);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.3);
   --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.5), 0 10px 10px -5px rgb(0 0 0 / 0.4);
-  
+
   --border-radius: 8px;
   --border-radius-lg: 12px;
   --border-radius-xl: 16px;
-  
+
   --transition: all 0.2s ease-in-out;
   --transition-fast: all 0.1s ease-in-out;
 }
@@ -60,21 +60,21 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-text);
 }
 
-h1 { 
-  font-size: 2.5rem; 
+h1 {
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--color-text);
 }
-h2 { 
-  font-size: 2rem; 
+h2 {
+  font-size: 2rem;
   color: var(--color-primary);
 }
-h3 { 
-  font-size: 1.5rem; 
+h3 {
+  font-size: 1.5rem;
   color: var(--color-text);
 }
-h4 { 
-  font-size: 1.25rem; 
+h4 {
+  font-size: 1.25rem;
   color: var(--color-text);
 }
 
@@ -101,11 +101,13 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.2rem 1.5rem;
+  padding: 0.375rem 1rem;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.75rem;
+  position: relative;
+  min-height: 48px;
 }
 
 .menu {
@@ -113,8 +115,40 @@ hr {
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 1.25rem;
+  gap: 1rem;
   align-items: center;
+}
+
+/* Hamburger menu button - hidden by default */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 0.25rem;
+  background: none;
+  border: none;
+  color: var(--color-text-secondary);
+}
+
+.hamburger span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--color-text-secondary);
+  margin: 3px 0;
+  transition: var(--transition);
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
 }
 
 .menu li
@@ -224,6 +258,54 @@ code {
   border-radius: 4px;
   font-family: 'JetBrains Mono', Monaco, 'Cascadia Code', monospace;
   font-size: 0.875rem;
+/* Print/PDF styles: force white background and black text */
+@media print {
+  * {
+    background: #fff !important;
+    color: #000 !important;
+    border-color: #000 !important;
+  }
+  
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-family: Arial, sans-serif !important;
+  }
+  
+  .container, .main-content, .card, .panel, .section, 
+  .content-section, .hero-section, .about-section, 
+  .vitae-card, .navbar, .social-links a {
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    border-color: #ccc !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p, li, span, div {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  
+  a {
+    color: #000 !important;
+    text-decoration: underline !important;
+    background: #fff !important;
+  }
+  
+  nav, footer, .no-print {
+    display: none !important;
+  }
+  
+  .social-links {
+    display: none !important;
+  }
+  
+  .btn {
+    background: #fff !important;
+    color: #000 !important;
+    border: 2px solid #000 !important;
+  }
+}
   color: var(--color-accent);
 }
 
@@ -260,20 +342,20 @@ button:focus,
     min-height: 44px;
     min-width: 44px;
   }
-  
+
   .menu li a:hover,
   .btn:hover,
   .social-links a:hover {
     transform: none;
   }
-  
+
   .menu li a:active,
   .btn:active,
   .social-links a:active {
     transform: scale(0.95);
     transition: transform 0.1s ease;
   }
-  
+
   .vitae-card:hover {
     transform: none;
   }
@@ -357,12 +439,15 @@ tr:hover {
   gap: 1rem;
   justify-content: center;
   margin: 2rem 0;
+  flex-wrap: wrap;
 }
 
 .social-links a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-width: 32px;
+  min-height: 32px;
   width: 32px;
   height: 32px;
   background: var(--color-surface);
@@ -370,27 +455,25 @@ tr:hover {
   border-radius: 50%;
   text-decoration: none;
   color: var(--color-text-secondary);
-  font-size: 1rem;
-  transition: var(--transition);
-}
-
-.social-links a i {
-  font-size: 0.95rem;
-}
-
-/* Hide text in social links, show only icons */
-.social-links a {
   font-size: 0;
+  transition: var(--transition);
+  overflow: hidden;
 }
 
 .social-links a i {
   font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 .social-links a:hover {
   background: var(--color-primary);
   color: white;
   border-color: var(--color-primary);
+  transform: scale(1.1);
 }
 
 footer {
@@ -449,77 +532,177 @@ footer .social-links {
 /* Mobile and tablet responsiveness */
 @media (max-width: 768px) {
   body {
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-size: 16px;
   }
-  
-  /* Navigation adjustments */
-  .navbar {
-    flex-direction: column;
-    padding: 0.75rem;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
+
+  /* Show hamburger menu on mobile */
+  .hamburger {
+    display: flex !important;
+    z-index: 1000;
   }
-  
+
+  /* Hide desktop menu on mobile - initially hidden */
   .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
     flex-direction: column;
-    gap: 0.75rem;
-    width: 100%;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-top: none;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    padding: 0.25rem 0;
+    gap: 0;
+    z-index: 999;
+    animation: slideDown 0.3s ease-in-out;
+    box-shadow: var(--shadow-lg);
+    margin-top: 1px;
   }
-  
+
+  .menu.active {
+    display: flex;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Navigation adjustments - hamburger menu */
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    gap: 0;
+    margin-bottom: 1rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    position: relative;
+  }
+
   .menu li {
     width: 100%;
     margin-right: 0;
   }
-  
+
   .menu li a {
     display: block;
-    width: 100%;
+    width: calc(100% - 1rem);
     text-align: center;
-    padding: 0.75rem;
+    padding: 0.625rem 1rem;
     font-size: 0.95rem;
+    min-height: 40px;
+    background: transparent;
+    border: none;
+    color: var(--color-text-secondary);
+    transition: var(--transition);
+    margin: 0.125rem 0.5rem;
+    border-radius: var(--border-radius);
   }
-  
+
+  .menu li:last-child a {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  .menu li a:hover,
+  .menu li.active a {
+    background: var(--color-primary);
+    color: white;
+  }
+
+  /* Keep social links in navbar visible */
+  .navbar .social-links {
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+  }
+
+  .navbar .social-links a {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+    min-width: 32px;
+    min-height: 32px;
+  }
+
+  /* Fix social media buttons on mobile */
   .social-links {
     gap: 1.5rem;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
   }
-  
+
   .social-links a {
     width: 44px;
     height: 44px;
-    font-size: 1.1rem;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+    color: var(--color-text-secondary);
+    transition: var(--transition);
   }
-  
+
+  .social-links a i {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-links a:hover {
+    background: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+  }
+
   /* Typography adjustments */
   .hero-title {
     font-size: 2rem;
     line-height: 1.2;
     margin-bottom: 0.5rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1rem;
     padding: 0 0.5rem;
     margin-bottom: 0.75rem;
   }
-  
+
   h1 { font-size: 2rem; }
   h2 { font-size: 1.75rem; }
   h3 { font-size: 1.375rem; }
   h4 { font-size: 1.125rem; }
-  
+
   .title {
     font-size: 1.75rem;
   }
-  
+
   /* Content sections */
   .content-section,
   .hero-section {
     padding: 1.25rem 1rem;
     margin: 1rem 0;
   }
-  
+
   .about-section {
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -536,46 +719,46 @@ footer .social-links {
     width: 140px;
     height: 140px;
   }
-  
+
   .short-intro {
     font-size: 1.125rem;
     text-align: center;
     max-width: 100%;
   }
-  
+
   /* Code blocks */
   pre {
     padding: 1rem;
     font-size: 0.8rem;
     overflow-x: auto;
   }
-  
+
   /* Tables */
   table {
     font-size: 0.875rem;
   }
-  
+
   th, td {
     padding: 0.75rem 0.5rem;
   }
-  
+
   /* Skills container */
   .skills-container {
     justify-content: center;
     gap: 0.5rem;
   }
-  
+
   .skill-tag {
     font-size: 0.8rem;
     padding: 0.4rem 0.8rem;
   }
-  
+
   /* Vitae cards */
   .vitae-card {
     padding: 1.5rem;
     margin-bottom: 1rem;
   }
-  
+
   .vitae-card h4 {
     font-size: 1.125rem;
   }
@@ -584,53 +767,81 @@ footer .social-links {
 /* Small mobile devices */
 @media (max-width: 480px) {
   body {
-    padding: 0.75rem;
+    padding: 0.5rem;
   }
-  
+
   .navbar {
     padding: 0.75rem;
+    background: transparent;
+    border: none;
   }
-  
+
   .menu li a {
-    padding: 0.875rem;
-    font-size: 1rem;
+    padding: 0.75rem;
+    font-size: 0.95rem;
+    min-height: 40px;
   }
-  
+
+  /* Better spacing for small screens */
+  .navbar .social-links a {
+    width: 38px;
+    height: 38px;
+    font-size: 0.95rem;
+    min-width: 38px;
+    min-height: 38px;
+  }
+
   .hero-title {
     font-size: 1.875rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1rem;
   }
-  
+
   .content-section,
   .hero-section {
-    padding: 1.5rem 1rem;
+    padding: 1.25rem 1rem;
   }
-  
+
   .about-section {
-    padding: 1.5rem 1rem;
+    padding: 1.25rem 1rem;
   }
-  
+
   .vitae-card {
     padding: 1rem;
   }
-  
+
   .btn {
     width: 100%;
     justify-content: center;
     margin-bottom: 1rem;
   }
-  
+
   h1 { font-size: 1.75rem; }
   h2 { font-size: 1.5rem; }
   h3 { font-size: 1.25rem; }
-  
+
   .social-links a {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     font-size: 1rem;
+  }
+}
+
+/* Extra small screens (iPhone SE, etc.) */
+@media (max-width: 375px) {
+  .navbar {
+    padding: 0.75rem;
+  }
+  
+  .navbar .social-links {
+    gap: 1.5rem;
+  }
+  
+  .menu li a {
+    padding: 0.875rem;
+    min-height: 44px;
   }
 }
 
@@ -640,15 +851,15 @@ footer .social-links {
     max-width: 1200px;
     padding: 3rem 2rem;
   }
-  
+
   .hero-title {
     font-size: 3.5rem;
   }
-  
+
   .content-section {
     padding: 4rem;
   }
-  
+
   .about-section {
     padding: 4rem;
     gap: 4rem;
@@ -754,12 +965,21 @@ ul li {
   margin-bottom: 10px;
 }
 
-/* Resume Button */
+/* Export Buttons */
+.export-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
-  padding: 0.875rem 2rem;
+  padding: 0.875rem 1.5rem;
   background: var(--color-primary);
   color: white;
   text-decoration: none;
@@ -770,6 +990,7 @@ ul li {
   transition: var(--transition);
   box-shadow: var(--shadow-sm);
   border: 2px solid var(--color-primary);
+  min-width: 160px;
 }
 
 .btn:hover {
@@ -821,14 +1042,154 @@ ul li {
   display: none;
 }
 
-/* Apply other print-specific styles if needed */
+/* Print mode for PDF generation */
 .print-mode {
-  font-size: 12px; /* Example: Adjust font size for the PDF */
-  line-height: 1.5;
-  text-align: justify;
-  font-family: 'Arial', sans-serif; /* Use a web-safe font */
-  word-spacing: 0.1em; /* Ensure proper word spacing in the PDF */
+  font-size: 12pt;
+  line-height: 1.4;
+  text-align: left;
+  font-family: 'Arial', sans-serif;
+  word-spacing: 0.05em;
+  background: #fff !important;
+  color: #000 !important;
+  padding: 0;
+  margin: 0;
+  max-width: none;
+  width: auto;
+}
 
+.print-mode * {
+  background: #fff !important;
+  color: #000 !important;
+  border-color: #333 !important;
+}
+
+.print-mode h1 {
+  font-size: 20pt;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 12pt;
+  color: #000 !important;
+  page-break-after: avoid;
+}
+
+.print-mode h2 {
+  font-size: 16pt;
+  font-weight: bold;
+  margin-top: 18pt;
+  margin-bottom: 8pt;
+  border-bottom: 2pt solid #000;
+  padding-bottom: 4pt;
+  color: #000 !important;
+  page-break-after: avoid;
+}
+
+.print-mode h3 {
+  font-size: 14pt;
+  font-weight: bold;
+  margin-top: 14pt;
+  margin-bottom: 6pt;
+  color: #000 !important;
+  page-break-after: avoid;
+}
+
+.print-mode h4 {
+  font-size: 12pt;
+  font-weight: bold;
+  margin-top: 12pt;
+  margin-bottom: 6pt;
+  color: #000 !important;
+  page-break-after: avoid;
+}
+
+.print-mode p {
+  margin-top: 0;
+  margin-bottom: 8pt;
+  text-align: justify;
+  text-justify: inter-word;
+  orphans: 2;
+  widows: 2;
+}
+
+.print-mode ul {
+  margin-top: 0;
+  margin-bottom: 12pt;
+  padding-left: 24pt;
+}
+
+.print-mode li {
+  margin-bottom: 4pt;
+  page-break-inside: avoid;
+}
+
+.print-mode .social-links,
+.print-mode nav,
+.print-mode footer,
+.print-mode .export-buttons {
+  display: none !important;
+}
+
+.print-mode .content-section {
+  padding: 0;
+  margin: 0;
+  background: #fff !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.print-mode .vitae-card {
+  margin-bottom: 16pt;
+  padding: 12pt;
+  border: 1pt solid #333;
+  border-radius: 0;
+  page-break-inside: avoid;
+  background: #fff !important;
+  box-shadow: none !important;
+}
+
+/* Page break utility classes for PDF */
+.page-break-before {
+  page-break-before: always;
+  break-before: page;
+}
+
+.page-break-after {
+  page-break-after: always;
+  break-after: page;
+}
+
+.no-page-break {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.print-mode .about-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20pt;
+  background: #fff !important;
+  border: none !important;
+  padding: 0;
+  margin-bottom: 20pt;
+  page-break-inside: avoid;
+}
+
+.print-mode .about-image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.print-mode .about-image img {
+  max-width: 120pt;
+  height: auto;
+  border: 2pt solid #333;
+  border-radius: 0;
+}
+
+.print-mode .short-intro {
+  font-size: 12pt;
+  margin-bottom: 12pt;
+  text-align: justify;
 }
 
 .short-intro {
@@ -876,6 +1237,15 @@ ul li {
   border: 1px solid var(--color-border);
 }
 
+/* Apply consistent background to all main content areas */
+main {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 1.25rem;
+  margin: 0.75rem 0;
+}
+
 /* Skills/Tags styling */
 .skills-container {
   display: flex;
@@ -903,7 +1273,8 @@ ul li {
 .print-mode .short-intro1 {
   font-size: 1.2em; /* Slightly smaller font for PDF */
   color: #000; /* Ensure text is black in the PDF */
-
+  background-color: white;
+  background: white !important;
 }
 
 /* Hide the contact section by default on the webpage */
@@ -914,8 +1285,15 @@ ul li {
 /* Make the contact section visible in the PDF */
 @media print {
   .pdf-only {
-    display: block;
+    display: block !important;
     padding: 10px;
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000 !important;
   }
 }
 

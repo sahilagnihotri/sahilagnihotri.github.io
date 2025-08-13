@@ -28,7 +28,14 @@ Markdown document is compiled by
 Markdown. For example, Goldmark does not support LaTeX math and Pandoc does. I
 have added the KaTeX support to this theme (i.e.,
 &lt;a href="https://github.com/yihui/hugo-xmin">hugo-xmin&lt;/a>)&lt;/p></description></item><item><title/><link>https://sahilagnihotri.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sahilagnihotri.github.io/about/</guid><description>&lt;div class="content-section">
-&lt;p>&lt;a href="#" class="btn no-pdf" id="download-pdf">Download as PDF&lt;/a>&lt;/p>
+&lt;div class="export-buttons no-pdf" style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
+ &lt;a href="#" class="btn" id="download-pdf">
+ &lt;i class="fas fa-file-pdf">&lt;/i> Download as PDF
+ &lt;/a>
+ &lt;a href="#" class="btn btn-outline" id="download-docx">
+ &lt;i class="fas fa-file-word">&lt;/i> Download as DOCX
+ &lt;/a>
+&lt;/div>
 &lt;h1 id="sahil-agnihotri">Sahil Agnihotri&lt;/h1>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;div class="short-intro">

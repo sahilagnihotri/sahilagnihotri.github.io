@@ -7,7 +7,14 @@ layout: single_withfooter
 
 <div class="content-section">
 
-<a href="#" class="btn no-pdf" id="download-pdf">Download as PDF</a>
+<div class="export-buttons no-pdf" style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
+  <a href="#" class="btn" id="download-pdf">
+    <i class="fas fa-file-pdf"></i> Download as PDF
+  </a>
+  <a href="#" class="btn btn-outline" id="download-docx">
+    <i class="fas fa-file-word"></i> Download as DOCX
+  </a>
+</div>
 
 # Sahil Agnihotri
 
@@ -108,6 +115,7 @@ Linkoping, Sweden
     <li><strong>Email:</strong> <a href="mailto:tech.agnihotri@gmail.com">tech.agnihotri@gmail.com</a></li>
     <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sahilagnihotri" target="_blank" rel="noopener noreferrer">https://linkedin.com/in/sahilagnihotri/</a></li>
   </ul>
+  <div style="padding-bottom: 30mm;"></div>
 </div>
 
 </div>

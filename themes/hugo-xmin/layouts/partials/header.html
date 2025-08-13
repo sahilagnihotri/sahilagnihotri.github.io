@@ -12,7 +12,12 @@
 
   <body>
     <nav class="navbar">
-      <ul class="menu">
+      <button class="hamburger" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="menu" id="nav-menu">
         {{ range .Site.Menus.main }}
         <li class="{{ if or (eq (lower .URL) (lower $.RelPermalink)) (eq (lower .URL) (lower $.Permalink)) }}active{{ end }}">
           <a href="{{ .URL | relURL }}">{{ .Name }}</a>
@@ -37,3 +42,26 @@
         </a>
       </div-->
     </nav>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.getElementById('hamburger-menu');
+        const navMenu = document.getElementById('nav-menu');
+        
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+            
+            // Close menu when clicking on a link
+            const menuLinks = navMenu.querySelectorAll('a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+        }
+    });
+    </script>

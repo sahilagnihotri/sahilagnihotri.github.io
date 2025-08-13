@@ -5,7 +5,9 @@
 brew install hugo
 hugo server
 # For full rebuilds
-hugo server --disableFastRender
+rm -rf resources/ public/ && hugo --minify
+
+hugo server --disableFastRender --noHTTPCache --cleanDestinationDir
 hugo --cleanDestinationDir
 
 # Build for production (minified)

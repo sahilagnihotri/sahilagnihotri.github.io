@@ -34,4 +34,156 @@
     <i class="fas fa-envelope"></i> Email
     </a>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const downloadPdfBtn = document.getElementById('download-pdf');
+    const downloadDocxBtn = document.getElementById('download-docx');
+    
+    if (downloadPdfBtn) {
+        downloadPdfBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Hide export buttons and add print mode class
+            const exportButtons = document.querySelector('.export-buttons');
+            const socialLinks = document.querySelectorAll('.social-links');
+            
+            if (exportButtons) exportButtons.style.display = 'none';
+            socialLinks.forEach(el => el.style.display = 'none');
+            document.body.classList.add('print-mode');
+            
+            const element = document.querySelector('.content-section');
+            const opt = {
+                margin: [25, 25, 25, 25], // 25mm margins for better buffer
+                filename: 'Sahil_Agnihotri_Resume.pdf',
+                image: { type: 'jpeg', quality: 0.95 },
+                html2canvas: { 
+                    scale: 2,
+                    useCORS: true,
+                    backgroundColor: '#ffffff',
+                    logging: false,
+                    scrollY: 0
+                },
+                jsPDF: { 
+                    unit: 'mm', 
+                    format: 'a4', 
+                    orientation: 'portrait',
+                    compress: true
+                },
+                pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+            };
+            
+            html2pdf().set(opt).from(element).save().then(() => {
+                // Restore visibility and remove print mode class
+                if (exportButtons) exportButtons.style.display = 'flex';
+                socialLinks.forEach(el => el.style.display = 'flex');
+                document.body.classList.remove('print-mode');
+            });
+        });
+    }
+    
+    if (downloadDocxBtn) {
+        downloadDocxBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Extract clean text content
+            const content = extractCleanTextForDocx();
+            
+            // Create proper RTF format that Word can read
+            const rtfHeader = `{\\rtf1\\ansi\\deff0 {\\fonttbl {\\f0 Times New Roman;}}`;
+            const rtfBody = content.replace(/<[^>]*>/g, '').replace(/\n/g, '\\par ');
+            const rtfFooter = `}`;
+            
+            const rtfContent = rtfHeader + rtfBody + rtfFooter;
+            
+            // For better Word compatibility, create a simplified HTML format
+            const wordHtml = `
+                <html xmlns:v="urn:schemas-microsoft-com:vml"
+                      xmlns:o="urn:schemas-microsoft-com:office:office"
+                      xmlns:w="urn:schemas-microsoft-com:office:word"
+                      xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+                      xmlns="http://www.w3.org/TR/REC-html40">
+                <head>
+                    <meta charset=utf-8>
+                    <meta name=ProgId content=Word.Document>
+                    <meta name=Generator content="Microsoft Word 15">
+                    <meta name=Originator content="Microsoft Word 15">
+                    <title>Sahil Agnihotri - Resume</title>
+                    <!--[if gte mso 9]><xml>
+                     <w:WordDocument>
+                      <w:View>Print</w:View>
+                      <w:Zoom>90</w:Zoom>
+                      <w:DoNotOptimizeForBrowser/>
+                     </w:WordDocument>
+                    </xml><![endif]-->
+                    <style>
+                    <!--
+                     @page Section1 {
+                        size:8.5in 11.0in;
+                        margin:1.0in 1.0in 1.0in 1.0in;
+                        mso-header-margin:.5in;
+                        mso-footer-margin:.5in;
+                        mso-paper-source:0;
+                     }
+                     div.Section1 {page:Section1;}
+                     body {
+                        font-family:"Times New Roman",serif;
+                        font-size:12.0pt;
+                        color:black;
+                        background:white;
+                        margin:0;
+                     }
+                     h1 { font-size:18.0pt; font-weight:bold; margin-top:0pt; margin-bottom:12pt; }
+                     h2 { font-size:16.0pt; font-weight:bold; margin-top:18pt; margin-bottom:6pt; border-bottom:1.0pt solid black; }
+                     h3 { font-size:14.0pt; font-weight:bold; margin-top:12pt; margin-bottom:6pt; }
+                     h4 { font-size:12.0pt; font-weight:bold; margin-top:10pt; margin-bottom:4pt; }
+                     p { margin-top:0pt; margin-bottom:6pt; text-align:justify; }
+                     ul { margin-top:0pt; margin-bottom:6pt; padding-left:36pt; }
+                     li { margin-bottom:3pt; }
+                    -->
+                    </style>
+                </head>
+                <body lang=EN-US>
+                <div class=Section1>
+                ${content}
+                </div>
+                </body>
+                </html>
+            `;
+            
+            const blob = new Blob([wordHtml], {
+                type: 'application/msword'
+            });
+            
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'Sahil_Agnihotri_Resume.doc'; // Use .doc extension for better compatibility
+            link.click();
+        });
+    }
+    
+    function extractCleanTextForDocx() {
+        const content = document.querySelector('.content-section');
+        const clone = content.cloneNode(true);
+        
+        // Remove unwanted elements
+        const unwanted = clone.querySelectorAll('.no-pdf, .social-links, .export-buttons, script, nav, footer');
+        unwanted.forEach(el => el.remove());
+        
+        // Show PDF-only content
+        const pdfOnly = clone.querySelectorAll('.pdf-only');
+        pdfOnly.forEach(el => el.style.display = 'block');
+        
+        // Clean up images and icons
+        const images = clone.querySelectorAll('img');
+        images.forEach(img => {
+            if (img.width < 50) { // Remove small icons
+                img.remove();
+            }
+        });
+        
+        return clone.innerHTML;
+    }
+});
+</script>
 {{ end }}
