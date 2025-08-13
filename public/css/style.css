@@ -1,5 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
+/* Fix for selected menu button being larger than others on mobile */
+/* Place this after the default mobile menu styles for highest specificity */
+
+@media (max-width: 768px) {
+  .menu {
+    width: 19vw;
+    max-width: 58px;
+  }
+  .menu li,
+  .menu li.active,
+  .menu li.selected,
+  .menu li.current {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .menu li a,
+  .menu li.active a,
+  .menu li.selected a,
+  .menu li.current a {
+    width: 100%;
+    margin: 0.2rem auto;
+    /* keep original padding and font-size for non-compact look */
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .menu li.active a,
+  .menu li.selected a,
+  .menu li.current a {
+    background: var(--color-surface-hover);
+    color: var(--color-primary);
+  }
+}
+
 :root {
   --color-primary: #3b82f6;
   --color-primary-hover: #2563eb;
@@ -107,7 +143,18 @@ hr {
   border-radius: var(--border-radius);
   margin-bottom: 0.75rem;
   position: relative;
-  min-height: 48px;
+  height: 50px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar script,
+.menu script {
+  display: none !important;
+  position: absolute !important;
+  height: 0 !important;
+  width: 0 !important;
+  visibility: hidden !important;
 }
 
 .menu {
@@ -232,13 +279,37 @@ div:empty:not(.social-links):not([class*="icon"]) {
 }
 
 .menu li.active a {
-  background-color: var(--color-primary);
-  color: white;
+  background-color: var(--color-surface-hover);
+  color: var(--color-primary);
 }
 
 .menu li a:hover {
-  color: var(--color-primary);
-  background-color: var(--color-surface-hover);
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+/* Desktop only - remove backgrounds to hide alignment issues */
+@media (min-width: 769px) {
+  .menu li.active a {
+    background-color: transparent !important;
+    color: var(--color-primary);
+  }
+
+  .menu li a:hover {
+    background-color: transparent !important;
+    color: var(--color-primary);
+  }
+  
+  .menu li a {
+    border: none !important;
+    outline: none !important;
+  }
+  
+  .menu li a:focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
 }
 
 pre {
@@ -267,41 +338,41 @@ code {
     color: #000 !important;
     border-color: #000 !important;
   }
-  
+
   body {
     background: #fff !important;
     color: #000 !important;
     font-family: Arial, sans-serif !important;
   }
-  
-  .container, .main-content, .card, .panel, .section, 
-  .content-section, .hero-section, .about-section, 
+
+  .container, .main-content, .card, .panel, .section,
+  .content-section, .hero-section, .about-section,
   .vitae-card, .navbar, .social-links a {
     background: #fff !important;
     color: #000 !important;
     box-shadow: none !important;
     border-color: #ccc !important;
   }
-  
+
   h1, h2, h3, h4, h5, h6, p, li, span, div {
     background: #fff !important;
     color: #000 !important;
   }
-  
+
   a {
     color: #000 !important;
     text-decoration: underline !important;
     background: #fff !important;
   }
-  
+
   nav, footer, .no-print {
     display: none !important;
   }
-  
+
   .social-links {
     display: none !important;
   }
-  
+
   .btn {
     background: #fff !important;
     color: #000 !important;
@@ -490,6 +561,7 @@ footer .social-links {
   align-items: center;
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 .about-text {
@@ -537,18 +609,20 @@ footer .social-links {
     position: absolute;
     top: 100%;
     left: 0;
-    right: 0;
+    transform: none;
+    width: 90vw;
+    max-width: 200px;
     flex-direction: column;
     background: var(--color-surface);
     border: 1px solid var(--color-border);
     border-top: none;
-    border-radius: 0 0 var(--border-radius) var(--border-radius);
-    padding: 0.25rem 0;
+    border-radius: 12px;
+    padding: 0.3rem 0.2rem;
     gap: 0;
     z-index: 999;
     animation: slideDown 0.3s ease-in-out;
     box-shadow: var(--shadow-lg);
-    margin-top: 1px;
+    margin-top: 8px;
   }
 
   .menu.active {
@@ -595,7 +669,7 @@ footer .social-links {
     border: none;
     color: var(--color-text-secondary);
     transition: var(--transition);
-    margin: 0.125rem 0.5rem;
+    margin: 0.08rem 0.25rem;
     border-radius: var(--border-radius);
   }
 
@@ -605,9 +679,13 @@ footer .social-links {
   }
 
   .menu li a:hover,
-  .menu li.active a {
+  .menu li a:active {
     background: var(--color-primary);
-    color: white;
+    color: #fff;
+  }
+  .menu li.active a {
+    background: var(--color-surface-hover);
+    color: var(--color-primary);
   }
 
   /* Keep social links in navbar visible */
@@ -698,6 +776,7 @@ footer .social-links {
     text-align: center;
     margin: 0;
     padding: 0;
+    border: none;
   }
 
   .about-image {
@@ -797,6 +876,7 @@ footer .social-links {
 
   .about-section {
     padding: 0;
+    border: none;
   }
 
   .vitae-card {
@@ -825,11 +905,11 @@ footer .social-links {
   .navbar {
     padding: 0.75rem;
   }
-  
+
   .navbar .social-links {
     gap: 1.5rem;
   }
-  
+
   .menu li a {
     padding: 0.875rem;
     min-height: 44px;
@@ -854,6 +934,7 @@ footer .social-links {
   .about-section {
     padding: 0;
     gap: 4rem;
+    border: none;
   }
 }
 
@@ -952,7 +1033,10 @@ ul {
   list-style-type: disc;
 }
 
-ul li {
+/* Only apply margin to content lists, not navigation */
+main ul li,
+.vitae-card ul li,
+.content-section ul li {
   margin-bottom: 10px;
 }
 
@@ -984,22 +1068,29 @@ ul li {
   min-width: 160px;
 }
 
-.btn:hover {
-  background: var(--color-primary-hover);
-  border-color: var(--color-primary-hover);
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
+.btn:hover, .btn:focus-visible {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  border-color: var(--color-accent);
+  color: #fff;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 20px 0 rgb(59 130 246 / 0.25);
+  outline: none;
 }
 
 .btn-outline {
-  background: transparent;
-  color: var(--color-primary);
+  background: var(--color-primary);
+  color: #fff;
   border: 2px solid var(--color-primary);
+  box-shadow: var(--shadow-sm);
 }
 
-.btn-outline:hover {
-  background: var(--color-primary);
-  color: white;
+.btn-outline:hover, .btn-outline:focus-visible {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  color: #fff;
+  border-color: var(--color-accent);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 20px 0 rgb(59 130 246 / 0.15);
+  outline: none;
 }
 
 /* Responsive Design */
@@ -1200,7 +1291,7 @@ ul li {
   background: var(--color-surface);
   border-radius: var(--border-radius);
   margin-bottom: 1rem;
-  border: 1px solid var(--color-border);
+  border: none !important;
 }
 
 .hero-title {
@@ -1225,7 +1316,7 @@ ul li {
   padding: 1.25rem;
   margin: 0.75rem 0;
   border-radius: var(--border-radius);
-  border: 1px solid var(--color-border);
+  border: none !important;
 }
 
 /* Apply consistent background to all main content areas */
