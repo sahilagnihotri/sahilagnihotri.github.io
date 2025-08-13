@@ -174,10 +174,10 @@ hr {
 
 .article-meta {
   text-decoration: none;
-  background: var(--color-surface);
-  padding: 0.75rem 1rem;
-  border-radius: var(--border-radius);
-  border: 1px solid var(--color-border);
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  border: none;
   font-size: 0.875rem;
   color: var(--color-text-light);
 }
@@ -246,7 +246,9 @@ pre {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   padding: 1rem;
-  overflow-x: auto;
+  overflow-x: visible;
+  white-space: pre-wrap;
+  word-wrap: break-word;
   font-family: 'JetBrains Mono', Monaco, 'Cascadia Code', monospace;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -717,7 +719,9 @@ footer .social-links {
   pre {
     padding: 1rem;
     font-size: 0.8rem;
-    overflow-x: auto;
+    overflow-x: visible;
+    white-space: pre-wrap;
+    word-wrap: break-word;
   }
 
   /* Tables */

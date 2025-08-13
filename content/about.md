@@ -27,7 +27,7 @@ layout: single_withfooter
 
 ---
 
-### Experience
+## 💼 Experience
 
 #### **<img src="/assets/icons/hexagon.png" alt="Hexagon AB" width="20" height="20"> [Hexagon AB](https://hexagon.com/)**
 **Expert Software Engineer**
@@ -83,7 +83,7 @@ Linkoping, Sweden
 
 ---
 
-### Education
+## 🎓 Education
 
 - **Indian Institute of Technology, Roorkee** – Postgraduate
 - **University of Oslo (UiO)**
@@ -92,7 +92,7 @@ Linkoping, Sweden
 
 ---
 
-### Certifications
+## ⚙️ Certifications
 
 - **PRINCE2 Agile® Project Management** – PeopleCert (Mar 2023)
 - **Agile Project Management** – Google (May 2022)
@@ -101,7 +101,7 @@ Linkoping, Sweden
 
 ---
 
-### Honors & Awards
+## 🏆 Honors & Awards
 
 - **Perforce Versionary Award** – Best Perforce Helix-based Product Developed by Customer (2016)
 - **Best Member Award** – AIESEC Chandigarh
