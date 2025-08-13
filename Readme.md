@@ -4,33 +4,46 @@
 # Install Hugo if needed
 brew install hugo
 
-# To make dev server accesibel from on devices on network
-hugo server --port 1313 --bind 0.0.0.0 &
+# 🚀 Development mode (starts server accessible from other devices)
+./build_script.sh debug
 
-# Development (GitHub Pages baseURL)
+# 📦 Production builds (generates both GitHub Pages & personal server)
+./build_script.sh release
+
+# 🧹 Full clean rebuild
+rm -rf resources/ public/ public-website/ && ./build_script.sh release
+
+# Alternative: Manual Hugo commands
+# Development server
 hugo server --disableFastRender --noHTTPCache --cleanDestinationDir
 
-# Development (your own server baseURL)
-hugo server --disableFastRender --noHTTPCache --cleanDestinationDir --config hugo.toml,baseurl.server.toml
-
-# For Deployment full rebuilds (GitHub Pages baseURL)
-rm -rf resources/ public/ && hugo --minify
-
-# For Deployment full rebuilds (your own server baseURL)
-rm -rf resources/ public/ && hugo --minify --config hugo.toml,baseurl.server.toml
-
-# Build for production (GitHub Pages)
+# Build for GitHub Pages only
 hugo --minify
 
-# Build for production (your own server)
-hugo --minify --config hugo.toml,baseurl.server.toml
+# Build for personal server only
+hugo --minify --destination public-website --baseURL "https://sahil.agnihotri.se/"
 ```
 
-# Config changes
+# Build System
 
-- The main config is `hugo.toml` (for GitHub Pages, with baseURL set to https://sahilagnihotri.github.io/).
-- To build for your own server, use the override file `baseurl.server.toml` (with baseURL set to https://sahil.agnihotri.se/).
-- All other settings are shared.
+## 🎯 **Enhanced Build Script Modes**
+
+| Command | Mode | Description |
+|---------|------|-------------|
+| `./build_script.sh debug` | Development | Starts Hugo server on `0.0.0.0:1313` for cross-device testing |
+| `./build_script.sh release` | Production | Builds both GitHub Pages & personal server versions |
+| `./build_script.sh` | Default | Same as `release` mode |
+
+## 📁 **Output Structure**
+- **GitHub Pages**: Built to `public/` with baseURL `https://sahilagnihotri.github.io/`
+- **Personal Server**: Built to `public-website/` with baseURL `https://sahil.agnihotri.se/`
+- **Configuration**: Uses single `hugo.toml` file with command-line overrides
+
+## 🌐 **Debug Mode Features**
+- Live reload enabled
+- Accessible from any device on your network
+- Auto-displays local and network URLs
+- Optimized for development (no caching, fast render disabled)
 
 ---
 
