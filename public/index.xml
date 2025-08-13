@@ -1,64 +1,61 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sahil Agnihotri on sahilagnihotri github pages site</title><link>https://sahilagnihotri.github.io/</link><description>Recent content in Sahil Agnihotri on sahilagnihotri github pages site</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 12 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://sahilagnihotri.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenVault</title><link>https://sahilagnihotri.github.io/app/openvault/</link><pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate><guid>https://sahilagnihotri.github.io/app/openvault/</guid><description>&lt;h2 id="openvault">OpenVault&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>OpenVault is a simple vault application which allows user to have secure Photos, Videos and documents. It has basic functionality to view photos, videos and documents.
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="privacy-policy-for-openvault">Privacy Policy for OpenVault&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">Data Collection&lt;/span>: &lt;span style="color:#ae81ff">We do not collect, store, or transmit any personal data&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">Encryption&lt;/span>: &lt;span style="color:#ae81ff">All photos are encrypted locally on your device&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">iCloud (planned)&lt;/span>: &lt;span style="color:#ae81ff">Optional iCloud sync uses Apple&amp;#39;s secure infrastructure&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">Analytics&lt;/span>: &lt;span style="color:#ae81ff">We do not use analytics or tracking&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">Privacy is a basic human right.&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
-&lt;h2 id="contact-sahilagnihotrise">Contact: &lt;a href="mailto:sahil@agnihotri.se">sahil@agnihotri.se&lt;/a>&lt;/h2></description></item><item><title>testblog post</title><link>https://sahilagnihotri.github.io/post/2025/04/12/a-quick-note/</link><pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate><guid>https://sahilagnihotri.github.io/post/2025/04/12/a-quick-note/</guid><description>&lt;p>Simple blog test Entry&lt;/p></description></item><item><title>A Test Markdown Post</title><link>https://sahilagnihotri.github.io/note/2016/02/14/a-test-markdown-post/</link><pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate><guid>https://sahilagnihotri.github.io/note/2016/02/14/a-test-markdown-post/</guid><description>&lt;p>This sample post is mainly for
-&lt;a href="https://github.com/rstudio/blogdown">&lt;strong>blogdown&lt;/strong>&lt;/a> users. If you do not use
-&lt;strong>blogdown&lt;/strong>, you can skip the first section.&lt;/p>
-&lt;h1 id="1-markdown-or-r-markdown">1. Markdown or R Markdown&lt;/h1>
-&lt;p>This is a post written in plain Markdown (&lt;code>*.md&lt;/code>) instead of R Markdown
-(&lt;code>*.Rmd&lt;/code>). The major differences are:&lt;/p>
-&lt;ol>
-&lt;li>You cannot run any R code in a plain Markdown document, whereas in an R
-Markdown document, you can embed R code chunks (&lt;code>```{r}&lt;/code>);&lt;/li>
-&lt;li>A plain Markdown post is rendered through
-&lt;a href="https://gohugo.io/overview/configuration/">Goldmark&lt;/a> by default, and an R
-Markdown document is compiled by
-&lt;a href="http://rmarkdown.rstudio.com">&lt;strong>rmarkdown&lt;/strong>&lt;/a> and
-&lt;a href="http://pandoc.org">Pandoc&lt;/a>.&lt;/li>
-&lt;/ol>
-&lt;p>There are differences in syntax between Goldmark&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s
-Markdown. For example, Goldmark does not support LaTeX math and Pandoc does. I
-have added the KaTeX support to this theme (i.e.,
-&lt;a href="https://github.com/yihui/hugo-xmin">hugo-xmin&lt;/a>)&lt;/p></description></item><item><title/><link>https://sahilagnihotri.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sahilagnihotri.github.io/about/</guid><description>&lt;div class="content-section">
-&lt;div class="export-buttons no-pdf" style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
- &lt;a href="#" class="btn" id="download-pdf">
- &lt;i class="fas fa-file-pdf">&lt;/i> Download as PDF
- &lt;/a>
- &lt;a href="#" class="btn btn-outline" id="download-docx">
- &lt;i class="fas fa-file-word">&lt;/i> Download as DOCX
- &lt;/a>
-&lt;/div>
-&lt;h1 id="sahil-agnihotri">Sahil Agnihotri&lt;/h1>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;div class="short-intro">
- I am an experienced Technical Project/Product Architect specializing in successfully delivering cross-platform software solutions (AR, mobile, desktop, web, and embedded systems) across various industries, including CAD, CFD, Geospatial, Surveying, Mining, and AEC BIM. I hold PRINCE2 Agile® and RedHat Enterprise Linux certifications and received the Perforce Versionary award in 2016. Always seeking new challenges and opportunities to learn. Let's connect!
-&lt;/div>
-&lt;hr>
-&lt;h3 id="experience">Experience&lt;/h3>
-&lt;h4>&lt;strong>&lt;img src="https://sahilagnihotri.github.io/assets/icons/hexagon.png" alt="Hexagon AB" width="20" height="20"> &lt;a href="https://hexagon.com/">Hexagon AB&lt;/a>&lt;/strong>&lt;/h4>
-&lt;p>&lt;strong>Expert Software Engineer&lt;/strong>
-&lt;em>Mar 2013 – Present (12 years 2 months)&lt;/em>
-Oslo, Norway&lt;/p></description></item><item><title/><link>https://sahilagnihotri.github.io/about_html/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sahilagnihotri.github.io/about_html/</guid><description>&lt;h1 id="sahil-agnihotri">Sahil Agnihotri&lt;/h1>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>I am an experienced Technical Project/Product Architect specializing in successfully delivering cross-platform software solutions (AR, mobile, desktop, web, and embedded systems) across various industries, including CAD, CFD, Geospatial, Surveying, Mining, and AEC BIM. I hold PRINCE2 Agile® and RedHat Enterprise Linux certifications and received the Perforce Versionary award in 2016. Always seeking new challenges and opportunities to learn. Let’s connect!&lt;/p>
-&lt;hr>
-&lt;h3 id="experience">&lt;span class="vitae-section-title">&lt;i class="fas fa-briefcase">&lt;/i> Experience&lt;/span>&lt;/h3>
-&lt;div class="vitae-card">
- &lt;h4>&lt;img src="https://sahilagnihotri.github.io/assets//icons/hexagon.png" alt="Hexagon AB" width="20" height="20"> [Hexagon AB](https://hexagon.com/)&lt;/h4>
- &lt;p>&lt;strong>Expert Software Engineer&lt;/strong>&lt;/p></description></item><item><title>Assignment1</title><link>https://sahilagnihotri.github.io/assignments/assignment1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sahilagnihotri.github.io/assignments/assignment1/</guid><description>&lt;h1 id="assignment1">Assignment1&lt;/h1>
-&lt;h2 id="code-sample">Code sample:&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>Sample code heres
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="hugoyaml-the-config-file">&lt;code>hugo.yaml&lt;/code> (the config file)&lt;/h2>
-&lt;p>For this example site, I defined permalinks for two sections, &lt;code>post&lt;/code> and &lt;code>note&lt;/code>, so that the links to pages under these directories will contain the date info, e.g., &lt;code>https://xmin.yihui.org/post/2016/02/14/a-plain-markdown-post/&lt;/code>. This is optional, and it is up to your personal taste of URLs.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">permalinks&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">note&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;/note/:year/:month/:day/:slug/&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">post&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;/post/:year/:month/:day/:slug/&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr></description></item><item><title>Assignment2</title><link>https://sahilagnihotri.github.io/assignments/assignment2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sahilagnihotri.github.io/assignments/assignment2/</guid><description>&lt;h1 id="assignment2">Assignment2&lt;/h1></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sahil Agnihotri on sahilagnihotri github pages site</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Sahil Agnihotri on sahilagnihotri github pages site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenVault</title>
+      <link>http://localhost:1313/app/openvault/</link>
+      <pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/app/openvault/</guid>
+      <description>&lt;h2 id=&#34;openvault&#34;&gt;OpenVault&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;OpenVault is a simple vault application which allows user to have secure Photos, Videos and documents. It has basic functionality to view photos, videos and documents.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;privacy-policy-for-openvault&#34;&gt;Privacy Policy for OpenVault&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;Data Collection&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;We do not collect, store, or transmit any personal data&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;Encryption&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;All photos are encrypted locally on your device&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;iCloud (planned)&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Optional iCloud sync uses Apple&amp;#39;s secure infrastructure&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;Analytics&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;We do not use analytics or tracking&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;Privacy is a basic human right.&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;&#xA;&lt;h2 id=&#34;contact-sahilagnihotrise&#34;&gt;Contact: &lt;a href=&#34;mailto:sahil@agnihotri.se&#34;&gt;sahil@agnihotri.se&lt;/a&gt;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>testblog post</title>
+      <link>http://localhost:1313/post/2025/04/12/a-quick-note/</link>
+      <pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2025/04/12/a-quick-note/</guid>
+      <description>&lt;p&gt;Simple blog test Entry&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A Test Markdown Post</title>
+      <link>http://localhost:1313/note/2016/02/14/a-test-markdown-post/</link>
+      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/note/2016/02/14/a-test-markdown-post/</guid>
+      <description>&lt;p&gt;This sample post is mainly for&#xA;&lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;&lt;strong&gt;blogdown&lt;/strong&gt;&lt;/a&gt; users. If you do not use&#xA;&lt;strong&gt;blogdown&lt;/strong&gt;, you can skip the first section.&lt;/p&gt;&#xA;&lt;h1 id=&#34;1-markdown-or-r-markdown&#34;&gt;1. Markdown or R Markdown&lt;/h1&gt;&#xA;&lt;p&gt;This is a post written in plain Markdown (&lt;code&gt;*.md&lt;/code&gt;) instead of R Markdown&#xA;(&lt;code&gt;*.Rmd&lt;/code&gt;). The major differences are:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;You cannot run any R code in a plain Markdown document, whereas in an R&#xA;Markdown document, you can embed R code chunks (&lt;code&gt;```{r}&lt;/code&gt;);&lt;/li&gt;&#xA;&lt;li&gt;A plain Markdown post is rendered through&#xA;&lt;a href=&#34;https://gohugo.io/overview/configuration/&#34;&gt;Goldmark&lt;/a&gt; by default, and an R&#xA;Markdown document is compiled by&#xA;&lt;a href=&#34;http://rmarkdown.rstudio.com&#34;&gt;&lt;strong&gt;rmarkdown&lt;/strong&gt;&lt;/a&gt; and&#xA;&lt;a href=&#34;http://pandoc.org&#34;&gt;Pandoc&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;There are differences in syntax between Goldmark&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s&#xA;Markdown. For example, Goldmark does not support LaTeX math and Pandoc does. I&#xA;have added the KaTeX support to this theme (i.e.,&#xA;&lt;a href=&#34;https://github.com/yihui/hugo-xmin&#34;&gt;hugo-xmin&lt;/a&gt;)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;div class=&#34;content-section&#34;&gt;&#xA;&lt;div class=&#34;export-buttons no-pdf&#34; style=&#34;display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;&#34;&gt;&#xA;  &lt;a href=&#34;#&#34; class=&#34;btn&#34; id=&#34;download-pdf&#34;&gt;&#xA;    &lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&#xA;  &lt;/a&gt;&#xA;  &lt;a href=&#34;#&#34; class=&#34;btn btn-outline&#34; id=&#34;download-docx&#34;&gt;&#xA;    &lt;i class=&#34;fas fa-file-word&#34;&gt;&lt;/i&gt; Download as DOCX&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;sahil-agnihotri&#34;&gt;Sahil Agnihotri&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;div class=&#34;short-intro&#34;&gt;&#xA;  I am an experienced Technical Project/Product Architect specializing in successfully delivering cross-platform software solutions (AR, mobile, desktop, web, and embedded systems) across various industries, including CAD, CFD, Geospatial, Surveying, Mining, and AEC BIM. I hold PRINCE2 Agile® and RedHat Enterprise Linux certifications and received the Perforce Versionary award in 2016. Always seeking new challenges and opportunities to learn. Let&#39;s connect!&#xA;&lt;/div&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;experience&#34;&gt;Experience&lt;/h3&gt;&#xA;&lt;h4&gt;&lt;strong&gt;&lt;img src=&#34;http://localhost:1313/assets/icons/hexagon.png&#34; alt=&#34;Hexagon AB&#34; width=&#34;20&#34; height=&#34;20&#34;&gt; &lt;a href=&#34;https://hexagon.com/&#34;&gt;Hexagon AB&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;&#xA;&lt;p&gt;&lt;strong&gt;Expert Software Engineer&lt;/strong&gt;&#xA;&lt;em&gt;Mar 2013 – Present (12 years 2 months)&lt;/em&gt;&#xA;Oslo, Norway&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/about_html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about_html/</guid>
+      <description>&lt;h1 id=&#34;sahil-agnihotri&#34;&gt;Sahil Agnihotri&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;I am an experienced Technical Project/Product Architect specializing in successfully delivering cross-platform software solutions (AR, mobile, desktop, web, and embedded systems) across various industries, including CAD, CFD, Geospatial, Surveying, Mining, and AEC BIM. I hold PRINCE2 Agile® and RedHat Enterprise Linux certifications and received the Perforce Versionary award in 2016. Always seeking new challenges and opportunities to learn. Let’s connect!&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;experience&#34;&gt;&lt;span class=&#34;vitae-section-title&#34;&gt;&lt;i class=&#34;fas fa-briefcase&#34;&gt;&lt;/i&gt; Experience&lt;/span&gt;&lt;/h3&gt;&#xA;&lt;div class=&#34;vitae-card&#34;&gt;&#xA;  &lt;h4&gt;&lt;img src=&#34;http://localhost:1313/assets//icons/hexagon.png&#34; alt=&#34;Hexagon AB&#34; width=&#34;20&#34; height=&#34;20&#34;&gt; [Hexagon AB](https://hexagon.com/)&lt;/h4&gt;&#xA;  &lt;p&gt;&lt;strong&gt;Expert Software Engineer&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Assignment1</title>
+      <link>http://localhost:1313/assignments/assignment1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/assignments/assignment1/</guid>
+      <description>&lt;h1 id=&#34;assignment1&#34;&gt;Assignment1&lt;/h1&gt;&#xA;&lt;h2 id=&#34;code-sample&#34;&gt;Code sample:&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Sample code heres&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;hugoyaml-the-config-file&#34;&gt;&lt;code&gt;hugo.yaml&lt;/code&gt; (the config file)&lt;/h2&gt;&#xA;&lt;p&gt;For this example site, I defined permalinks for two sections, &lt;code&gt;post&lt;/code&gt; and &lt;code&gt;note&lt;/code&gt;, so that the links to pages under these directories will contain the date info, e.g., &lt;code&gt;https://xmin.yihui.org/post/2016/02/14/a-plain-markdown-post/&lt;/code&gt;. This is optional, and it is up to your personal taste of URLs.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;permalinks&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;note&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/note/:year/:month/:day/:slug/&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;post&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/post/:year/:month/:day/:slug/&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>Assignment2</title>
+      <link>http://localhost:1313/assignments/assignment2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/assignments/assignment2/</guid>
+      <description>&lt;h1 id=&#34;assignment2&#34;&gt;Assignment2&lt;/h1&gt;</description>
+    </item>
+  </channel>
+</rss>

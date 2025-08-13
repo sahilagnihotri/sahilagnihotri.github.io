@@ -343,21 +343,11 @@ button:focus,
     min-width: 44px;
   }
 
-  .menu li a:hover,
-  .btn:hover,
-  .social-links a:hover {
-    transform: none;
-  }
-
   .menu li a:active,
   .btn:active,
   .social-links a:active {
     transform: scale(0.95);
     transition: transform 0.1s ease;
-  }
-
-  .vitae-card:hover {
-    transform: none;
   }
 }
 
@@ -496,11 +486,8 @@ footer .social-links {
   grid-template-columns: 2fr 1fr;
   gap: 2rem;
   align-items: center;
-  margin: 1rem 0;
-  background: var(--color-surface);
-  padding: 1.5rem;
-  border-radius: var(--border-radius);
-  border: 1px solid var(--color-border);
+  margin: 0;
+  padding: 0;
 }
 
 .about-text {
@@ -706,9 +693,9 @@ footer .social-links {
   .about-section {
     grid-template-columns: 1fr;
     gap: 1.5rem;
-    padding: 1.25rem 1rem;
     text-align: center;
-    margin: 1rem 0;
+    margin: 0;
+    padding: 0;
   }
 
   .about-image {
@@ -805,7 +792,7 @@ footer .social-links {
   }
 
   .about-section {
-    padding: 1.25rem 1rem;
+    padding: 0;
   }
 
   .vitae-card {
@@ -861,7 +848,7 @@ footer .social-links {
   }
 
   .about-section {
-    padding: 4rem;
+    padding: 0;
     gap: 4rem;
   }
 }
@@ -1169,7 +1156,7 @@ ul li {
   background: #fff !important;
   border: none !important;
   padding: 0;
-  margin-bottom: 20pt;
+  margin-bottom: 0;
   page-break-inside: avoid;
 }
 
