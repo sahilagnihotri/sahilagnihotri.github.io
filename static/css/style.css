@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
 /* Fix for selected menu button being larger than others on mobile */
 /* Place this after the default mobile menu styles for highest specificity */
 
@@ -33,7 +35,6 @@
     color: var(--color-primary);
   }
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root {
   --color-primary: #3b82f6;
@@ -143,6 +144,7 @@ hr {
   margin-bottom: 0.75rem;
   position: relative;
   min-height: 48px;
+  max-height: 48px;
 }
 
 .menu {
