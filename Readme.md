@@ -4,6 +4,8 @@
 # Install Hugo if needed
 brew install hugo
 
+# To make dev server accesibel from on devices on network
+hugo server --port 1313 --bind 0.0.0.0 &
 
 # Development (GitHub Pages baseURL)
 hugo server --disableFastRender --noHTTPCache --cleanDestinationDir
