@@ -143,8 +143,18 @@ hr {
   border-radius: var(--border-radius);
   margin-bottom: 0.75rem;
   position: relative;
-  min-height: 48px;
-  max-height: 48px;
+  height: 50px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar script,
+.menu script {
+  display: none !important;
+  position: absolute !important;
+  height: 0 !important;
+  width: 0 !important;
+  visibility: hidden !important;
 }
 
 .menu {
@@ -276,6 +286,30 @@ div:empty:not(.social-links):not([class*="icon"]) {
 .menu li a:hover {
   background-color: var(--color-primary);
   color: #fff;
+}
+
+/* Desktop only - remove backgrounds to hide alignment issues */
+@media (min-width: 769px) {
+  .menu li.active a {
+    background-color: transparent !important;
+    color: var(--color-primary);
+  }
+
+  .menu li a:hover {
+    background-color: transparent !important;
+    color: var(--color-primary);
+  }
+  
+  .menu li a {
+    border: none !important;
+    outline: none !important;
+  }
+  
+  .menu li a:focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
 }
 
 pre {
@@ -999,7 +1033,10 @@ ul {
   list-style-type: disc;
 }
 
-ul li {
+/* Only apply margin to content lists, not navigation */
+main ul li,
+.vitae-card ul li,
+.content-section ul li {
   margin-bottom: 10px;
 }
 
