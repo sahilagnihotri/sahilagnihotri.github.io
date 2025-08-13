@@ -170,15 +170,58 @@ document.addEventListener('DOMContentLoaded', function() {
         const unwanted = clone.querySelectorAll('.no-pdf, .social-links, .export-buttons, script, nav, footer');
         unwanted.forEach(el => el.remove());
         
+        // Remove horizontal rules (hr elements) for cleaner DOCX output
+        const hrs = clone.querySelectorAll('hr');
+        hrs.forEach(hr => hr.remove());
+        
         // Show PDF-only content
         const pdfOnly = clone.querySelectorAll('.pdf-only');
         pdfOnly.forEach(el => el.style.display = 'block');
         
-        // Clean up images and icons
+        // Fix Contact Information formatting
+        const contactTitles = clone.querySelectorAll('.vitae-section-title');
+        contactTitles.forEach(title => {
+            // Replace icon with text equivalent and apply proper heading
+            const iconElement = title.querySelector('i.fas.fa-address-card');
+            if (iconElement) {
+                iconElement.textContent = '📞 '; // Use emoji as fallback
+            }
+            // Convert to proper heading
+            const h2 = document.createElement('h2');
+            h2.innerHTML = title.innerHTML;
+            h2.style.marginTop = '18pt';
+            h2.style.borderBottom = '1pt solid black';
+            h2.style.paddingBottom = '4pt';
+            title.parentNode.replaceChild(h2, title);
+        });
+        
+        // Clean up images and icons, but preserve company icons with alt text
         const images = clone.querySelectorAll('img');
         images.forEach(img => {
-            if (img.width < 50) { // Remove small icons
+            if (img.width < 50) { // Small icons
+                // Replace with company name from alt text
+                const altText = img.alt || '';
+                if (altText) {
+                    const textNode = document.createTextNode(altText + ' ');
+                    img.parentNode.insertBefore(textNode, img);
+                }
                 img.remove();
+            }
+        });
+        
+        // Convert Font Awesome icons to text equivalents
+        const icons = clone.querySelectorAll('i[class*="fa"]');
+        icons.forEach(icon => {
+            let replacement = '';
+            if (icon.classList.contains('fa-graduation-cap')) replacement = '🎓 ';
+            else if (icon.classList.contains('fa-certificate')) replacement = '⚙️ ';
+            else if (icon.classList.contains('fa-trophy')) replacement = '🏆 ';
+            else if (icon.classList.contains('fa-address-card')) replacement = '📞 ';
+            
+            if (replacement) {
+                icon.textContent = replacement;
+            } else {
+                icon.remove();
             }
         });
         

@@ -85,9 +85,9 @@ Linkoping, Sweden
 
 ## 🎓 Education
 
-- **Indian Institute of Technology, Roorkee** – Postgraduate
+- **Indian Institute of Technology, Roorkee** – Postgraduate Machine Learning
 - **University of Oslo (UiO)**
-- **Chitkara University** – Bachelor of Engineering (B.E.)
+- **Chitkara University** – Bachelor of Engineering (Computer Science)
 - **Gandhi Academy of Naturopathy and Yoga** – N.D.D.Y
 
 ---
