@@ -232,13 +232,13 @@ div:empty:not(.social-links):not([class*="icon"]) {
 }
 
 .menu li.active a {
-  background-color: var(--color-primary);
-  color: white;
+  background-color: var(--color-surface-hover);
+  color: var(--color-primary);
 }
 
 .menu li a:hover {
-  color: var(--color-primary);
-  background-color: var(--color-surface-hover);
+  background-color: var(--color-primary);
+  color: #fff;
 }
 
 pre {
@@ -267,41 +267,41 @@ code {
     color: #000 !important;
     border-color: #000 !important;
   }
-  
+
   body {
     background: #fff !important;
     color: #000 !important;
     font-family: Arial, sans-serif !important;
   }
-  
-  .container, .main-content, .card, .panel, .section, 
-  .content-section, .hero-section, .about-section, 
+
+  .container, .main-content, .card, .panel, .section,
+  .content-section, .hero-section, .about-section,
   .vitae-card, .navbar, .social-links a {
     background: #fff !important;
     color: #000 !important;
     box-shadow: none !important;
     border-color: #ccc !important;
   }
-  
+
   h1, h2, h3, h4, h5, h6, p, li, span, div {
     background: #fff !important;
     color: #000 !important;
   }
-  
+
   a {
     color: #000 !important;
     text-decoration: underline !important;
     background: #fff !important;
   }
-  
+
   nav, footer, .no-print {
     display: none !important;
   }
-  
+
   .social-links {
     display: none !important;
   }
-  
+
   .btn {
     background: #fff !important;
     color: #000 !important;
@@ -607,9 +607,13 @@ footer .social-links {
   }
 
   .menu li a:hover,
-  .menu li.active a {
+  .menu li a:active {
     background: var(--color-primary);
-    color: white;
+    color: #fff;
+  }
+  .menu li.active a {
+    background: var(--color-surface-hover);
+    color: var(--color-primary);
   }
 
   /* Keep social links in navbar visible */
@@ -829,11 +833,11 @@ footer .social-links {
   .navbar {
     padding: 0.75rem;
   }
-  
+
   .navbar .social-links {
     gap: 1.5rem;
   }
-  
+
   .menu li a {
     padding: 0.875rem;
     min-height: 44px;
