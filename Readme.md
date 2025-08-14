@@ -47,4 +47,47 @@ hugo --minify --destination public-website --baseURL "https://sahil.agnihotri.se
 
 ---
 
+## 🔧 **Git History Management**
+
+### Rewrite History from a Specific Commit
+
+To clean up git history and remove all commits before a specific commit:
+
+```bash
+# 1. Create backup for safety
+git branch backup-full-history
+
+# 2. Create new orphan branch from target commit
+git checkout --orphan new-master <target-commit-hash>
+git commit -m "Initial commit from <target-commit-hash>"
+
+# 3. Cherry-pick all commits after target commit
+git cherry-pick <target-commit-hash>..backup-full-history
+
+# 4. Replace master branch
+git branch -D master
+git branch -m new-master master
+
+# 5. Force push (⚠️ WARNING: This rewrites history!)
+git push origin master --force
+```
+
+**Example**: Remove all commits before `a0c6024db69c8414adcbfcbea3c9b6723cd05d0c`
+```bash
+git branch backup-full-history
+git checkout --orphan new-master a0c6024db69c8414adcbfcbea3c9b6723cd05d0c
+git commit -m "Initial commit from a0c6024"
+git cherry-pick a0c6024..backup-full-history
+git branch -D master
+git branch -m new-master master
+git push origin master --force
+```
+
+⚠️ **Important Notes:**
+- This rewrites git history completely
+- Creates a backup branch automatically
+
+---
+```
 ifconfig | grep inet
+```
