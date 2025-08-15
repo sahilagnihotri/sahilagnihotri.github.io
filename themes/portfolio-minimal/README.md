@@ -21,6 +21,7 @@ A modern, minimal Hugo theme designed for portfolios, personal websites, and res
 
 Visit the [live demo](https://sahilagnihotri.github.io/portfolio-minimal/) to see the theme in action.
 
+
 ## 📦 Installation
 
 ### Option 1: Git Submodule (Recommended)
@@ -38,6 +39,113 @@ git clone https://github.com/sahilagnihotri/portfolio-minimal.git themes/portfol
 ### Option 3: Download ZIP
 
 Download and extract the theme into your Hugo site's `themes/portfolio-minimal` directory.
+
+---
+
+## 🚀 Local Setup & Initial Testing
+
+### Prerequisites
+
+- Hugo >= 0.80.0
+- Modern web browser
+- Git (for theme installation)
+
+### Setup Commands
+
+```sh
+# Clone or navigate to your Hugo site
+cd your-hugo-site
+
+# Install theme as submodule (recommended)
+git submodule add https://github.com/sahilagnihotri/portfolio-minimal.git themes/portfolio-minimal
+
+# Or test with example site
+cd themes/portfolio-minimal/exampleSite
+hugo server --themesDir ../..
+```
+
+### Configuration Validation
+
+```sh
+# Check Hugo version
+hugo version
+
+# Validate configuration
+hugo config
+
+# Test build without serving
+hugo --dry-run
+```
+
+---
+
+## ⏺ Update Todos
+
+  ⎿  ☒ Create comprehensive testing guide with local setup instructions
+     ☐ Detail PDF export testing procedures
+     ☐ Cover responsive design validation
+     ☐ Include production deployment testing
+     ☐ Add feature validation checklist
+
+---
+
+## ⏺ 📄 PDF Export Testing (Critical)
+
+### Enable PDF Export
+
+```toml
+# In hugo.toml
+[params]
+  enablePDFExport = true
+  pdfExportSelector = "main"
+  pdfFilename = "resume.pdf"
+```
+
+### PDF Export Test Checklist
+
+```sh
+# Start local server
+hugo server
+
+# Navigate to page with PDF export (usually /about)
+# Click "Download PDF" button
+```
+
+**Critical PDF Requirements:**
+- White background (not dark theme colors)
+- Contact information visible and properly formatted
+- Company icons replaced with company names in text
+- No duplicate "Sahil Agnihotri" or author name text
+- Content with `.no-pdf` class is hidden
+- Content with `.pdf-only` class appears only in PDF
+- Proper page breaks and formatting
+- All text is readable and properly sized
+
+### PDF Testing Code Examples
+
+```html
+<!-- Test content for PDF export -->
+<div class="no-pdf">
+  <p>This should NOT appear in PDF</p>
+</div>
+
+<div class="pdf-only">
+  <p>This should ONLY appear in PDF</p>
+</div>
+
+<div class="contact-info">
+  <p>Email: test@example.com</p>
+  <p>Phone: +1-234-567-8900</p>
+</div>
+```
+
+### PDF Browser Testing
+
+Test PDF export in multiple browsers:
+- Chrome/Chromium
+- Firefox
+- Safari (macOS)
+- Edge
 
 ## ⚙️ Configuration
 
