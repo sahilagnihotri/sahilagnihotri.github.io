@@ -22,7 +22,7 @@
     {{ end }}
 */}}
 
-{{ if (eq .RelPermalink "/about/") }}
+{{ if (or (eq .RelPermalink "/about/") (strings.HasSuffix .RelPermalink "/about/")) }}
 <div class="social-links">
     <a href="{{ .Site.Params.github }}" target="_blank" rel="noopener noreferrer">
     <i class="fab fa-github"></i> GitHub
@@ -37,8 +37,13 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, looking for download buttons...');
     const downloadPdfBtn = document.getElementById('download-pdf');
     const downloadDocxBtn = document.getElementById('download-docx');
+    
+    console.log('PDF button found:', downloadPdfBtn);
+    console.log('DOCX button found:', downloadDocxBtn);
+    console.log('html2pdf available:', typeof html2pdf);
     
     if (downloadPdfBtn) {
         downloadPdfBtn.addEventListener('click', function(e) {
