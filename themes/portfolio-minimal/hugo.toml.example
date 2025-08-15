@@ -1,0 +1,68 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "Your Portfolio"
+theme = "portfolio-minimal"
+
+# Enable unsafe HTML rendering for custom content
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  # Basic site information
+  author = "Your Name"
+  description = "A minimal portfolio website showcasing my work and experience"
+  
+  # Social media links (optional)
+  github = "https://github.com/yourusername"
+  linkedin = "https://linkedin.com/in/yourusername"
+  email = "mailto:your.email@example.com"
+  
+  # Theme features (all optional)
+  math = false                    # Enable KaTeX math rendering
+  centerImages = true             # Center images in content
+  enablePDFExport = false         # Enable PDF export functionality
+  showSocialOnAbout = true        # Show social links on about page
+  
+  # PDF Export settings (only if enablePDFExport = true)
+  pdfExportSelector = "main"      # CSS selector for PDF content
+  pdfFilename = "resume.pdf"      # Default filename for PDF export
+  
+  # Footer settings
+  showFooterSocial = false        # Show social links in footer
+  hideDefaultFooter = false       # Hide the default copyright footer
+  showHugoBranding = true         # Show "Built with Hugo" text in footer
+  # footer = "Custom footer text with {Year} placeholder"
+
+# Navigation menu
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 2
+
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects"
+    weight = 3
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/post"
+    weight = 4
+
+# Custom permalinks
+[permalinks]
+  post = "/blog/:year/:month/:day/:slug/"
+  projects = "/projects/:slug/"
+
+# Taxonomies
+[taxonomies]
+  tag = "tags"
+  category = "categories"

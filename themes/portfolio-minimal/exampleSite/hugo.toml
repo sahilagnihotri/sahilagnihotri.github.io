@@ -1,0 +1,67 @@
+baseURL = "https://sahilagnihotri.github.io/portfolio-minimal/"
+languageCode = "en-us"
+title = "Portfolio Minimal Demo"
+theme = "portfolio-minimal"
+
+# Enable unsafe HTML rendering for custom content
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  # Basic site information
+  author = "Jane Doe"
+  description = "A minimal portfolio website showcasing my work and experience as a software developer"
+  
+  # Social media links
+  github = "https://github.com/janedoe"
+  linkedin = "https://linkedin.com/in/janedoe"
+  email = "mailto:jane.doe@example.com"
+  
+  # Theme features
+  math = false
+  centerImages = true
+  enablePDFExport = true
+  showSocialOnAbout = true
+  
+  # PDF Export settings
+  pdfExportSelector = "main"
+  pdfFilename = "jane-doe-resume.pdf"
+  
+  # Footer settings
+  showFooterSocial = true
+  hideDefaultFooter = false
+  showHugoBranding = true
+
+# Navigation menu
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 2
+
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects"
+    weight = 3
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/post"
+    weight = 4
+
+# Custom permalinks
+[permalinks]
+  post = "/blog/:year/:month/:day/:slug/"
+  projects = "/projects/:slug/"
+
+# Taxonomies
+[taxonomies]
+  tag = "tags"
+  category = "categories"

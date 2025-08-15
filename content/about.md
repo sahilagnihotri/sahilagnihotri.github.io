@@ -57,7 +57,7 @@ Oslo, Norway
 **Senior Software Engineer**
 *Jan 2019 – Oct 2023 (4 years 10 months)*
 Oslo Area, Norway
-- Develed cross-platform  rendering solutions for WebGL, OpenGL ES, and native platforms.
+- Developed cross-platform rendering solutions for WebGL, OpenGL ES, and native platforms.
 - Conducted performance optimizations and data analysis for 3D applications.
 - Delivered AR and XR solutions for various industries, including Smart Cities and HVAC.
 

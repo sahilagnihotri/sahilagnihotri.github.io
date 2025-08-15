@@ -1,0 +1,19 @@
+name = "Portfolio Minimal"
+license = "MIT"
+licenselink = "https://github.com/sahilagnihotri/portfolio-minimal/blob/main/LICENSE"
+description = "A minimal, modern Hugo theme for portfolios and personal websites with dark theme, mobile navigation, and PDF export features"
+homepage = "https://github.com/sahilagnihotri/portfolio-minimal"
+demosite = "https://sahilagnihotri.github.io"
+tags = ["minimal", "portfolio", "personal", "clean", "modern", "dark-theme", "responsive", "resume", "cv"]
+features = ["responsive", "dark-theme", "mobile-navigation", "pdf-export", "social-media"]
+min_version = "0.80"
+
+[author]
+  name = "Sahil Agnihotri"
+  homepage = "https://sahilagnihotri.github.io"
+
+[original]
+  name = "XMin"
+  homepage = "https://xmin.yihui.org"
+  repo = "https://github.com/yihui/hugo-xmin"
+  author = "Yihui Xie"

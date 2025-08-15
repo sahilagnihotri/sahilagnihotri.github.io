@@ -1,20 +1,38 @@
 baseURL = "https://sahilagnihotri.github.io/"
-
 languageCode = "en-us"
 title = "sahilagnihotri github pages site"
-theme = "hugo-xmin"
+theme = "portfolio-minimal"
 
+# Enable unsafe HTML rendering for custom content
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
 
 [params]
+  # Basic site information
   author = "Sahil Agnihotri"
-  description = "A minimal Hugo site using the XMin theme."
+  description = "Software Developer & Architect - Portfolio and blog"
+  
+  # Social media links
   github = "https://github.com/sahilagnihotri"
   linkedin = "https://linkedin.com/in/sahilagnihotri"
   email = "mailto:tech.agnihotri@gmail.com"
+  
+  # Theme features
+  math = false
+  centerImages = true
+  enablePDFExport = true
+  showSocialOnAbout = true
+  
+  # PDF Export settings
+  pdfExportSelector = "main"
+  pdfFilename = "sahil-agnihotri-resume.pdf"
+  
+  # Footer settings
+  showFooterSocial = false
+  hideDefaultFooter = true
+  showHugoBranding = false
 
 [permalinks]
   note = "/note/:year/:month/:day/:slug/"
@@ -38,14 +56,14 @@ theme = "hugo-xmin"
   [[menu.main]]
     name = "Assignments"
     url = "/assignments"
-    weight = 2
+    weight = 3
 
   [[menu.main]]
     name = "Blog"
     url = "/post"
-    weight = 2
+    weight = 4
 
   [[menu.main]]
     name = "Vitae"
     url = "/about"
-    weight = 3
+    weight = 5
