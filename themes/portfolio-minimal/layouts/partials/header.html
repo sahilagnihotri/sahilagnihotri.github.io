@@ -17,6 +17,8 @@
         <span></span>
         <span></span>
       </button>
+      
+      <!-- Navigation menu -->
       <ul class="menu" id="nav-menu">
         {{ range .Site.Menus.main }}
         {{ $itemURL := replaceRE "/$" "" .URL }}
@@ -50,6 +52,7 @@
       </div-->
     </nav>
 
+    <!-- Mobile navigation script -->
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         const hamburger = document.getElementById('hamburger-menu');

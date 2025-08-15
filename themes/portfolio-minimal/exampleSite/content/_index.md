@@ -1,22 +1,29 @@
 ---
-title: "Jane Doe"
+title: "Sahil Agnihotri"
 ---
 
-## Software Developer & Designer
+## Portfolio theme
 
-Welcome to my portfolio! I'm a passionate software developer with expertise in web technologies, mobile development, and user experience design.
+Welcome to my portfolio theme!
 
-### What I Do
+## Live Demo
 
-- **Full-Stack Development**: Building robust web applications with modern frameworks
-- **Mobile Development**: Creating responsive and native mobile experiences  
-- **UI/UX Design**: Crafting intuitive user interfaces and seamless experiences
-- **Open Source**: Contributing to the developer community
+🔗 [View Live Site](https://sahilagnihotri.github.io)
+💻 [Source Code](https://github.com/sahilagnihotri/sahilagnihotri.github.io)
+🎨 [Theme Repository](https://github.com/sahilagnihotri/portfolio-minimal)
 
-### Recent Work
+---
 
-Check out my [projects](/projects) to see what I've been working on lately, or read my [blog](/post) for insights on development and design.
+This project demonstrates the power of minimal design and static site generators for creating professional, fast-loading websites that are easy to maintain and update.
 
-### Get In Touch
+## Features
 
-I'm always interested in new opportunities and collaborations. Feel free to reach out!
+- **Clean Design**: Minimal, distraction-free interface
+- **Mobile Responsive**: Works seamlessly across all devices
+- **Dark Theme**: Eye-friendly interface for extended reading
+- **PDF Export**: Export resume/CV directly from the website
+- **Fast Loading**: Optimized for performance and SEO
+
+---
+
+## Blogs:

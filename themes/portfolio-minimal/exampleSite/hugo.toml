@@ -11,24 +11,24 @@ theme = "portfolio-minimal"
 
 [params]
   # Basic site information
-  author = "Jane Doe"
+  author = "Sahil Agnihotri"
   description = "A minimal portfolio website showcasing my work and experience as a software developer"
-  
+
   # Social media links
-  github = "https://github.com/janedoe"
-  linkedin = "https://linkedin.com/in/janedoe"
-  email = "mailto:jane.doe@example.com"
-  
+  github = "https://github.com/sahilagnihotri"
+  linkedin = "https://linkedin.com/in/sahilagnihotri"
+  email = "mailto:tech.agnihotri@gmail.com"
+
   # Theme features
   math = false
   centerImages = true
   enablePDFExport = true
   showSocialOnAbout = true
-  
+
   # PDF Export settings
   pdfExportSelector = "main"
-  pdfFilename = "jane-doe-resume.pdf"
-  
+  pdfFilename = "sahil-agnihotri-resume.pdf"
+
   # Footer settings
   showFooterSocial = true
   hideDefaultFooter = false
@@ -42,18 +42,13 @@ theme = "portfolio-minimal"
     weight = 1
 
   [[menu.main]]
-    name = "About"
-    url = "/about"
+    name = "Blog"
+    url = "/post"
     weight = 2
 
   [[menu.main]]
-    name = "Projects"
-    url = "/projects"
-    weight = 3
-
-  [[menu.main]]
-    name = "Blog"
-    url = "/post"
+    name = "About"
+    url = "/about"
     weight = 4
 
 # Custom permalinks
