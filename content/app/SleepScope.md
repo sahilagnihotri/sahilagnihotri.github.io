@@ -1,17 +1,20 @@
 ---
-title: Privacy Policy — SleepScope
+title: SleepScope
 author: Sahil Agnihotri
 draft: false
+date: '2026-01-17'
 layout: single_withfooter
 permalink: /privacy-policy-sleepscope/
 ---
+# SleepScope
+**SleepScope — CPAP Therapy Tracker**
+*Last updated: March 27, 2026*
 
+I built SleepScope to view my own CPAP therapy data on my phone. It reads data from a ResMed AirSense machine through an ezShare WiFi SD card (a $15 card that goes in the  machine's SD slot and creates a local WiFi hotspot).
+
+If you don't have the hardware to test: you can use "Import from Files" to load sample data, or enable Apple Health to see the HealthKit integration.
 
 # Privacy Policy
-
-**SleepScope — CPAP Therapy Tracker**
-
-*Last updated: March 27, 2026*
 
 Sahil Agnihotri ("we", "us", "our") operates the SleepScope mobile application (the "App"). This Privacy Policy explains how we collect, use, store, and protect your information when you use the App.
 
